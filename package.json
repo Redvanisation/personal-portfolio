@@ -1,0 +1,28 @@
+{
+  "name": "redvan-portfolio",
+  "version": "1.0.0",
+  "description": "I'm Redvan and this is my personal portfolio v2018",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.comp.css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "keywords": [
+    "redvan",
+    "portfolio",
+    "software",
+    "engineer",
+    "web",
+    "developer",
+    "full",
+    "stack",
+    "front",
+    "end"
+  ],
+  "author": "Redvanisation",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.4",
+    "nodemon": "^1.18.4"
+  }
+}
