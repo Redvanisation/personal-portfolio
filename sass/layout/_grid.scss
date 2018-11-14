@@ -1,5 +1,6 @@
 .row {
     max-width: $grid-width;
+    position: relative;
 
     // @include respond(tab-port) {
     //     max-width: 50rem;
