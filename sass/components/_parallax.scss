@@ -1,0 +1,10 @@
+.parallax {
+    background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('../../img/not-sorted/anders-jilden-239-unsplash.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    margin-top: -10vh;
+    // transform: skewY(-12deg);
+    // position: relative;
+    // z-index: 9999;
+}

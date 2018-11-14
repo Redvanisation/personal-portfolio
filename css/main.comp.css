@@ -108,6 +108,13 @@ body {
   transform: translate(-50%, 0);
   line-height: 2rem; }
 
+.parallax {
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("../../img/not-sorted/anders-jilden-239-unsplash.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  margin-top: -10vh; }
+
 .row {
   max-width: 114rem;
   position: relative;
@@ -136,7 +143,7 @@ body {
     width: calc(3 * ((100% - 6rem * 3) / 4) + (6rem * 2)); }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
   background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("../img/not-sorted/fabian-grohs-610515-unsplash.jpg");
@@ -153,9 +160,10 @@ body {
 .section-about {
   background-image: linear-gradient(to right bottom, #191919, #030202);
   margin-top: -10vh;
-  padding: 10rem 10rem;
+  padding: 15rem 10rem 20rem 10rem;
   color: white;
-  text-align: center; }
+  text-align: center;
+  transform: skewY(5.5deg); }
   .section-about__picture {
     display: block;
     float: left; }
@@ -180,3 +188,5 @@ body {
     position: absolute;
     top: 1rem;
     left: 30rem; }
+  .section-about > * {
+    transform: skewY(-5.5deg); }

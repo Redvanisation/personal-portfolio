@@ -1,9 +1,10 @@
 .section-about {
     background-image: linear-gradient(to right bottom, rgba($color-primary, 1), rgba($color-primary-dark, 1));
     margin-top: -10vh;
-    padding: 10rem 10rem;
+    padding: 15rem 10rem 20rem 10rem;
     color: white;
     text-align: center;
+    transform: skewY(5.5deg);
 
     &__picture {
         display: block;
@@ -35,5 +36,9 @@
         position: absolute;
         top: 1rem;
         left: 30rem;
+    }
+
+    & > * {
+        transform: skewY(-5.5deg);
     }
 }
