@@ -1,0 +1,38 @@
+body{
+font-family: 'Raleway', 'Lato', sans-serif;
+
+}
+
+.heading-primary {
+    
+    font-family: 'Lato', 'Raleway', sans-serif;
+    color: $color-grey-light;
+    width: 80%;
+    
+    &--h1 {
+        display: block;
+        font-size: 4.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        // margin-bottom: 1rem;
+        padding: 1rem 3rem 1rem 2rem;
+        font-weight: 700;
+        background-color: rgba($color-primary-dark, .7);
+    }
+    
+    &--text {
+        text-transform: uppercase;
+        display: block;
+        // text-align: justify;
+        line-height: 1.5;
+        letter-spacing: .2rem;
+        font-weight: 600;
+        font-size: 3rem;
+        background-color: rgba($color-primary-dark, .7);
+        padding: 0 2rem 1rem 3.5rem;
+    }
+
+    &--highlight {
+        color: lightblue;
+    }
+}

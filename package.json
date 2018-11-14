@@ -4,8 +4,7 @@
   "description": "I'm Redvan and this is my personal portfolio v2018",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.comp.css",
-    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+    "watch:sass": "node-sass sass/main.scss css/main.comp.css -w"
   },
   "keywords": [
     "redvan",
@@ -22,7 +21,6 @@
   "author": "Redvanisation",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.9.4",
-    "nodemon": "^1.18.4"
+    "node-sass": "^4.9.4"
   }
 }
