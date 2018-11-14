@@ -7,17 +7,18 @@ font-family: 'Raleway', 'Lato', sans-serif;
     
     font-family: 'Lato', 'Raleway', sans-serif;
     color: $color-grey-light;
-    width: 80%;
+    width: 100%;
     
     &--h1 {
         display: block;
         font-size: 4.5rem;
         text-transform: uppercase;
         letter-spacing: 1rem;
-        // margin-bottom: 1rem;
+        margin-bottom: .2rem;
         padding: 1rem 3rem 1rem 2rem;
-        font-weight: 700;
+        font-weight: 900;
         background-color: rgba($color-primary-dark, .7);
+        width: 90%;
     }
     
     &--text {
@@ -28,11 +29,20 @@ font-family: 'Raleway', 'Lato', sans-serif;
         letter-spacing: .2rem;
         font-weight: 600;
         font-size: 3rem;
-        background-color: rgba($color-primary-dark, .7);
-        padding: 0 2rem 1rem 3.5rem;
+        background-color: rgba($color-primary-dark, .8);
+        padding: 0 2rem 1rem 4rem;
+        margin-left: 2rem;
+        width: 90%;
     }
 
     &--highlight {
-        color: lightblue;
+        color: $color-grey;
+        display: inline-block;
+        transition: all .2s;
+        margin-left: 1rem;
+
+        &:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
     }
 }

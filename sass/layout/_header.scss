@@ -1,6 +1,7 @@
 .header {
     height: 95vh;
-    clip-path: polygon(0 0, 100% 8vh, 100% 100%, 0 85vh);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
     background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('../img/not-sorted/fabian-grohs-610515-unsplash.jpg');
     background-size: cover;
     position: relative;
