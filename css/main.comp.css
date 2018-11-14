@@ -15,15 +15,17 @@ body {
 .heading-primary {
   font-family: 'Lato', 'Raleway', sans-serif;
   color: #EBE9E9;
-  width: 80%; }
+  width: 100%; }
   .heading-primary--h1 {
     display: block;
     font-size: 4.5rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
+    margin-bottom: .2rem;
     padding: 1rem 3rem 1rem 2rem;
-    font-weight: 700;
-    background-color: rgba(3, 2, 2, 0.7); }
+    font-weight: 900;
+    background-color: rgba(3, 2, 2, 0.7);
+    width: 90%; }
   .heading-primary--text {
     text-transform: uppercase;
     display: block;
@@ -31,10 +33,53 @@ body {
     letter-spacing: .2rem;
     font-weight: 600;
     font-size: 3rem;
-    background-color: rgba(3, 2, 2, 0.7);
-    padding: 0 2rem 1rem 3.5rem; }
+    background-color: rgba(3, 2, 2, 0.8);
+    padding: 0 2rem 1rem 4rem;
+    margin-left: 2rem;
+    width: 90%; }
   .heading-primary--highlight {
-    color: lightblue; }
+    color: #8D8B8B;
+    display: inline-block;
+    transition: all .2s;
+    margin-left: 1rem; }
+    .heading-primary--highlight:hover {
+      transform: scale(1.1) rotate(5deg); }
+
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 2rem 6.5rem 2rem 5rem;
+  border-radius: 300rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all .2s;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5); }
+
+.btn:hover {
+  transform: translate(-50%, -0.5rem); }
+
+.btn:active {
+  transform: translate(-50%, -0.3rem); }
+
+.btn--arrow {
+  display: inline-block;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 2.2rem;
+  left: 17rem;
+  margin-left: 1rem; }
+
+.btn-white {
+  background-color: #fff;
+  color: #000; }
+
+.btn-header {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  line-height: 2rem; }
 
 .row {
   max-width: 114rem;
@@ -64,7 +109,8 @@ body {
 
 .header {
   height: 95vh;
-  clip-path: polygon(0 0, 100% 8vh, 100% 100%, 0 85vh);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
   background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("../img/not-sorted/fabian-grohs-610515-unsplash.jpg");
   background-size: cover;
   position: relative; }

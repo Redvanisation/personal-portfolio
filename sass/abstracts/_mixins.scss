@@ -12,3 +12,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin txtShadow {
+    text-shadow: 0 2rem 4rem rgba($color-black, .4);
+}
+
+@mixin boxShadow {
+    box-shadow: 0 2rem 4rem rgba($color-black, .5);
+}
