@@ -1,0 +1,39 @@
+.section-about {
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 1), rgba($color-primary-dark, 1));
+    margin-top: -10vh;
+    padding: 10rem 10rem;
+    color: white;
+    text-align: center;
+
+    &__picture {
+        display: block;
+        float: left;
+        &--img {
+            background-color: $color-primary-light;
+            border-radius: 50%;
+            display: inline-block;
+            width: 25rem;
+            height: 25rem;
+        }
+    }
+
+    &__text {
+        display: block;
+        float: left;
+        position: absolute;
+        top: 8rem;
+        left: 40rem;
+        text-align: left;
+        font-size: $global-font-size;
+        letter-spacing: .2rem;
+    }
+
+    &--h3 {
+        display: inline-block;
+        font-size: 5rem;
+        // text-transform: uppercase;
+        position: absolute;
+        top: 1rem;
+        left: 30rem;
+    }
+}

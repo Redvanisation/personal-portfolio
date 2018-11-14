@@ -8,17 +8,20 @@
         border-radius: 300rem;
         text-decoration: none;
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: 900;
         transition: all .2s;
-        @include boxShadow;
+        @include boxShadowWt;
     }
 
     &:hover {
         transform: translate(-50%, -.5rem);
+        box-shadow: 0 .6rem 2.5rem rgba($color-white, .5);
+
     }
 
     &:active {
         transform: translate(-50%, -.3rem);
+        box-shadow: 0 .5rem 1rem rgba($color-white, .5);
     }
 
     &--arrow {

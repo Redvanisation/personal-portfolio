@@ -9,6 +9,9 @@ html {
 body {
   box-sizing: border-box; }
 
+.section {
+  padding: 5rem 10rem; }
+
 body {
   font-family: 'Raleway', 'Lato', sans-serif; }
 
@@ -45,6 +48,28 @@ body {
     .heading-primary--highlight:hover {
       transform: scale(1.1) rotate(5deg); }
 
+.heading-secondary {
+  display: inline-block;
+  width: 50%;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1.7;
+  letter-spacing: 1rem;
+  text-shadow: 0 0.5rem 2.5rem rgba(255, 255, 255, 0.4);
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: scale(1.5) rotate(5deg);
+    text-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4); }
+
+.margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.margin-bottom-big {
+  margin-bottom: 8rem; }
+
 .btn, .btn:link, .btn:visited {
   display: inline-block;
   text-transform: uppercase;
@@ -52,15 +77,17 @@ body {
   border-radius: 300rem;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 900;
   transition: all .2s;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0.3rem 2rem rgba(255, 255, 255, 0.5); }
 
 .btn:hover {
-  transform: translate(-50%, -0.5rem); }
+  transform: translate(-50%, -0.5rem);
+  box-shadow: 0 0.6rem 2.5rem rgba(255, 255, 255, 0.5); }
 
 .btn:active {
-  transform: translate(-50%, -0.3rem); }
+  transform: translate(-50%, -0.3rem);
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.5); }
 
 .btn--arrow {
   display: inline-block;
@@ -83,6 +110,7 @@ body {
 
 .row {
   max-width: 114rem;
+  position: relative;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -121,3 +149,34 @@ body {
     top: 50%;
     left: 5%;
     transform: translateY(-30%); }
+
+.section-about {
+  background-image: linear-gradient(to right bottom, #191919, #030202);
+  margin-top: -10vh;
+  padding: 10rem 10rem;
+  color: white;
+  text-align: center; }
+  .section-about__picture {
+    display: block;
+    float: left; }
+    .section-about__picture--img {
+      background-color: #575757;
+      border-radius: 50%;
+      display: inline-block;
+      width: 25rem;
+      height: 25rem; }
+  .section-about__text {
+    display: block;
+    float: left;
+    position: absolute;
+    top: 8rem;
+    left: 40rem;
+    text-align: left;
+    font-size: 1.7rem;
+    letter-spacing: .2rem; }
+  .section-about--h3 {
+    display: inline-block;
+    font-size: 5rem;
+    position: absolute;
+    top: 1rem;
+    left: 30rem; }
