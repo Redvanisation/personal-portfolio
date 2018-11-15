@@ -13,6 +13,9 @@
     transform: translate(-50%, -50%);
 }
 
+
+// TEXT SHADOWS
+
 @mixin txtShadowWt {
     text-shadow: 0 .5rem 2.5rem rgba($color-white, .4);
 }
@@ -20,6 +23,9 @@
 @mixin txtShadowBlk {
     text-shadow: 0 .5rem 2.5rem rgba($color-black, .4);
 }
+
+
+// BOX SHADOWS
 
 @mixin boxShadowBlk {
     box-shadow: 0 2rem 4rem rgba($color-black, .5);

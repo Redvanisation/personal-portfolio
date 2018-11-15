@@ -2,7 +2,7 @@
     background-image: linear-gradient(to right bottom, rgba($color-primary, 1), rgba($color-primary-dark, 1));
     margin-top: -10vh;
     padding: 15rem 10rem 20rem 10rem;
-    color: white;
+    color: $color-grey-light;
     text-align: center;
     transform: skewY(5.5deg);
 
@@ -37,6 +37,18 @@
         top: 1rem;
         left: 30rem;
     }
+
+    & > * {
+        transform: skewY(-5.5deg);
+    }
+}
+
+.section-projects {
+    margin-top: -10vh;
+    padding: 10rem 10rem 20rem 10rem;
+    transform: skewY(5.5deg);
+    position: relative;
+    background-image: linear-gradient(to right bottom, $color-primary-light ,$color-primary);
 
     & > * {
         transform: skewY(-5.5deg);

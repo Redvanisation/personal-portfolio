@@ -10,7 +10,8 @@ body {
   box-sizing: border-box; }
 
 .section {
-  padding: 5rem 10rem; }
+  padding: 5rem 10rem;
+  text-align: center; }
 
 body {
   font-family: 'Raleway', 'Lato', sans-serif; }
@@ -60,15 +61,19 @@ body {
   .heading-secondary:hover {
     transform: scale(1.5) rotate(5deg);
     text-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4); }
+  .heading-secondary__projects {
+    text-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4); }
+    .heading-secondary__projects:hover {
+      text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
 
 .margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
 
 .margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -89,17 +94,29 @@ body {
   transform: translate(-50%, -0.3rem);
   box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.5); }
 
-.btn--arrow {
+.btn__arrow {
   display: inline-block;
   font-size: 1.8rem;
   position: absolute;
   top: 2.2rem;
   left: 17rem;
   margin-left: 1rem; }
+  .btn__arrow--white {
+    top: 1.5rem;
+    left: 18rem; }
 
 .btn-white {
-  background-color: #fff;
+  background-color: #EBE9E9;
   color: #000; }
+
+.btn-dark {
+  background-color: #030202;
+  color: #EBE9E9;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5) !important; }
+  .btn-dark:hover {
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5); }
+  .btn-dark:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
 
 .btn-header {
   position: absolute;
@@ -108,12 +125,23 @@ body {
   transform: translate(-50%, 0);
   line-height: 2rem; }
 
+.btn-projects:hover {
+  transform: skew(-5.5deg) translate(0, 1rem); }
+
+.btn-projects:active {
+  transform: skew(-5.5deg) translate(0, 0.3rem); }
+
 .parallax {
   background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("../../img/not-sorted/anders-jilden-239-unsplash.jpg");
   background-size: cover;
   background-position: top;
   height: 100vh;
   margin-top: -10vh; }
+
+.card {
+  height: 30rem;
+  border-radius: 5px;
+  border: 1px solid black; }
 
 .row {
   max-width: 114rem;
@@ -161,7 +189,7 @@ body {
   background-image: linear-gradient(to right bottom, #191919, #030202);
   margin-top: -10vh;
   padding: 15rem 10rem 20rem 10rem;
-  color: white;
+  color: #EBE9E9;
   text-align: center;
   transform: skewY(5.5deg); }
   .section-about__picture {
@@ -189,4 +217,13 @@ body {
     top: 1rem;
     left: 30rem; }
   .section-about > * {
+    transform: skewY(-5.5deg); }
+
+.section-projects {
+  margin-top: -10vh;
+  padding: 10rem 10rem 20rem 10rem;
+  transform: skewY(5.5deg);
+  position: relative;
+  background-image: linear-gradient(to right bottom, #575757, #191919); }
+  .section-projects > * {
     transform: skewY(-5.5deg); }
