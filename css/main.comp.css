@@ -112,11 +112,11 @@ body {
 .btn-dark {
   background-color: #030202;
   color: #EBE9E9;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5) !important; }
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.5) !important; }
   .btn-dark:hover {
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5) !important; }
   .btn-dark:active {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important; }
 
 .btn-header {
   position: absolute;
@@ -129,7 +129,7 @@ body {
   transform: skew(-5.5deg) translate(0, 1rem); }
 
 .btn-projects:active {
-  transform: skew(-5.5deg) translate(0, 0.3rem); }
+  transform: skew(-5.5deg) translate(0, 1.5rem); }
 
 .parallax {
   background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("../../img/not-sorted/anders-jilden-239-unsplash.jpg");
