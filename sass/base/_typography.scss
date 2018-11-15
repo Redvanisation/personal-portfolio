@@ -63,4 +63,13 @@ font-family: 'Raleway', 'Lato', sans-serif;
         text-shadow: 0 .5rem 1rem rgba($color-white, .4);
 
     }
+
+    &__projects {
+        @include txtShadowBlk;
+
+        &:hover {
+            text-shadow: 0 .5rem 1rem rgba($color-black, .4);
+        }
+
+    }
 }

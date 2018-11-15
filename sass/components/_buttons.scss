@@ -24,21 +24,40 @@
         box-shadow: 0 .5rem 1rem rgba($color-white, .5);
     }
 
-    &--arrow {
+    &__arrow {
         display: inline-block;
         font-size: 1.8rem;
         position: absolute;
         top: 2.2rem;
         left: 17rem;
         margin-left: 1rem;
+
+        &--white {
+            top: 1.5rem;
+            left: 18rem;
+        }
     }
 
 }
 
 .btn-white {
-    background-color: $color-white;
+    background-color: $color-grey-light;
     color: $color-black;
 
+}
+
+.btn-dark {
+    background-color: $color-primary-dark;
+    color: $color-grey-light;
+    box-shadow: 0 2rem 4rem rgba($color-black, .5) !important;
+
+    &:hover {
+        box-shadow: 0 2rem 4rem rgba($color-black, .5);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .5);
+    }
 }
 
 .btn-header {
@@ -47,4 +66,16 @@
     left: 50%;
     transform: translate(-50%, 0);
     line-height: 2rem;
+}
+
+.btn-projects {
+
+    &:hover {
+        transform: skew(-5.5deg) translate(0, 1rem);
+
+    }
+
+    &:active {
+        transform: skew(-5.5deg) translate(0, .3rem);
+    }
 }
