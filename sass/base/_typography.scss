@@ -98,6 +98,30 @@ font-family: 'Raleway', 'Lato', sans-serif;
     }
 }
 
+
+.section-contact {
+    &__form {
+
+        &--input,
+        &--textarea {
+            font-size: 2rem;
+            color: $color-grey;
+            text-align: center;
+            font-weight: 200;
+        }
+
+        &--textarea {
+            text-align: left;
+        }
+
+
+    }
+}
+
+
+
+
+
 .footer {
     color: $color-grey-light;
     font-size: $global-font-size;
