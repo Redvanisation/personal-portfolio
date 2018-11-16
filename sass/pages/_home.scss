@@ -78,6 +78,67 @@
     }
 }
 
+.section-contact {
+    margin-top: -10vh;
+    padding: 10rem 10rem 30rem 10rem;
+    transform: skewY(5.5deg);
+    background-image: linear-gradient(to right bottom, $color-primary-light ,$color-primary);
+    position: relative;
+
+    & > * {
+        transform: skewY(-5.5deg);
+    }
+
+    &__form {
+
+        &--label,
+        &--input,
+        &--textarea {
+            margin: 0 auto;
+            padding: 2rem;
+            border-radius: .5rem;
+            background-color: transparent;
+            transition: transform .2s, border-bottom .4s, border .4s;
+            margin-bottom: 3rem;
+            outline: none;
+        }
+        
+        &--input,
+        &--textarea {
+            display: block;
+            border: 1px solid $color-black;
+            width: 60rem;
+
+
+            &:focus,
+            &:hover {
+                transform: scale(1.1);
+                background-color: rgba($color-black, .5);
+            }
+        }
+        
+        &--label {
+            display: inline-block;
+        }
+
+        &--input {
+
+            &:focus {
+                border-bottom: 2px solid $color-grey-light;
+            }
+
+        }
+
+        &--textarea {
+            
+            &:focus {
+                border-bottom: 2px solid $color-grey-light;
+            }
+        }
+
+    }
+}
+
 
 .footer {
     height: 80vh;

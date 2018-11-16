@@ -38,6 +38,20 @@
         }
     }
 
+    &--submit {
+        margin-top: 4rem;
+        transform: translate(0, 0);
+        border: 1px solid $color-black;
+
+        &:hover {
+            transform: translate(0, -.5rem);
+        }
+
+        &:active {
+            transform: translate(0, .2rem);
+        }
+    }
+
 }
 
 .btn-white {
