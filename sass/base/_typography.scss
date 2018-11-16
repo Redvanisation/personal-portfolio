@@ -97,3 +97,55 @@ font-family: 'Raleway', 'Lato', sans-serif;
 
     }
 }
+
+.footer {
+    color: $color-grey-light;
+    font-size: $global-font-size;
+
+    &__icons {
+        font-size: 3rem;
+    }
+    
+    &__text {
+        text-align: center;
+    }
+    
+    &__copyrights {
+        letter-spacing: .4rem;
+    }
+
+&__link {
+    
+        &:link,
+        &:visited,
+        &:active {
+            text-decoration: none;
+            color: $color-grey;
+            font-weight: 900;
+            
+            // &:hover {
+            //     transform: scale(1.1) rotate(5deg);
+
+            // }
+
+            &:hover {
+                color: $color-primary-light;
+            }
+
+        }
+
+        &--icon {
+            text-decoration: none;
+            color: $color-grey-light;
+            font-weight: 600;
+
+            &:hover {
+                color: $color-grey;
+            }
+        }
+}
+
+    &__technologies {
+        font-weight: 600;
+    }
+}
