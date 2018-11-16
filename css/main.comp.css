@@ -192,6 +192,8 @@ body {
   background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("../../img/not-sorted/anders-jilden-239-unsplash.jpg");
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   height: 120vh;
   margin-top: -10vh; }
 
@@ -199,6 +201,8 @@ body {
   background-image: linear-gradient(to right, rgba(25, 25, 25, 0.8), rgba(3, 2, 2, 0.8)), url("../../img/not-sorted/fabian-grohs-597395-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   height: 120vh;
   -webkit-clip-path: polygon(0 0, 100% 30vh, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
