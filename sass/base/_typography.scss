@@ -11,7 +11,7 @@ font-family: 'Raleway', 'Lato', sans-serif;
     
     &--h1 {
         display: block;
-        font-size: 4.5rem;
+        font-size: 5.5rem;
         text-transform: uppercase;
         letter-spacing: 1rem;
         margin-bottom: .2rem;
@@ -50,8 +50,7 @@ font-family: 'Raleway', 'Lato', sans-serif;
 
 .heading-secondary {
     display: inline-block;
-    width: 50%;
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     line-height: 1.7;
     letter-spacing: 1rem;
@@ -64,7 +63,32 @@ font-family: 'Raleway', 'Lato', sans-serif;
 
     }
 
-    &__projects {
+    &__black {
+        @include txtShadowBlk;
+
+        &:hover {
+            text-shadow: 0 .5rem 1rem rgba($color-black, .4);
+        }
+
+    }
+}
+
+.heading-tertiary {
+    display: inline-block;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 1.7;
+    letter-spacing: 1rem;
+    @include txtShadowWt;
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1.5) ;
+        text-shadow: 0 .5rem 1rem rgba($color-white, .4);
+
+    }   
+    
+    &__black {
         @include txtShadowBlk;
 
         &:hover {
