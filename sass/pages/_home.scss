@@ -47,10 +47,37 @@
     margin-top: -10vh;
     padding: 10rem 10rem 20rem 10rem;
     transform: skewY(5.5deg);
-    position: relative;
     background-image: linear-gradient(to right bottom, $color-primary-light ,$color-primary);
+    position: relative;
 
     & > * {
         transform: skewY(-5.5deg);
+    }
+}
+
+.section-skills {
+    padding: 10rem;
+    background-image: linear-gradient(to bottom right, $color-white, $color-grey-light);
+    // height: 100vh;
+
+    &__text {
+        font-size: $global-font-size;
+    }
+
+
+    
+
+}
+
+[class^="devicon-"] {
+    display: inline-block;
+    font-size: 8rem;
+    line-height: 1.3;
+    margin-left: 3rem;
+    transition: all .2s;
+
+    &:hover {
+        // font-size: 10rem;
+        transform: scale(1.5);
     }
 }
