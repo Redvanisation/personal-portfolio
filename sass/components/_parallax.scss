@@ -8,3 +8,13 @@
     // position: relative;
     // z-index: 9999;
 }
+
+.parallax2 {
+    background-image: linear-gradient(to right, rgba($color-primary, .8), rgba($color-primary-dark, .8)), url('../../img/not-sorted/fabian-grohs-597395-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    -webkit-clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0 100%);
+    margin-top: -15vh;
+}

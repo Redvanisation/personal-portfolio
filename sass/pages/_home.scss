@@ -56,9 +56,9 @@
 }
 
 .section-skills {
-    padding: 10rem;
+    padding: 10rem 10rem 20rem 10rem;
     background-image: linear-gradient(to bottom right, $color-white, $color-grey-light);
-    // height: 100vh;
+    
 
     &__text {
         font-size: $global-font-size;
