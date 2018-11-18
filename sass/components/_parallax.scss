@@ -1,0 +1,24 @@
+.parallax {
+    background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('../../img/not-sorted/anders-jilden-239-unsplash.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 120vh;
+    margin-top: -10vh;
+    // transform: skewY(-12deg);
+    // position: relative;
+    // z-index: 9999;
+}
+
+.parallax2 {
+    background-image: linear-gradient(to right, rgba($color-primary, .8), rgba($color-primary-dark, .8)), url('../../img/not-sorted/fabian-grohs-597395-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 120vh;
+    -webkit-clip-path: polygon(0 0, 100% 30vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
+    margin-top: -35vh;
+}

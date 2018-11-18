@@ -6,9 +6,16 @@
     <title>Redvan's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="css/fontello-codes.css">
+    <link rel="stylesheet" href="css/fontello-embedded.css">
+    <link rel="stylesheet" href="css/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="css/fontello-ie7.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.comp.css" />
-    <!-- <script src="js/index.js"></script> -->
 </head>
+
 <body>
     <!-- <div class="navigation">
         Navigation goes here
@@ -18,15 +25,13 @@
             <h1 class="heading-primary">
                 <span class="heading-primary--h1">Hello I'm <span class="heading-primary--highlight"> Redvan</span>!</span> 
                 <span class="heading-primary--text">a creative and passionate web developer based in <span class="heading-primary--highlight"> New York city</span></span>
-                <!--Hello I'm Redvan! I'm a very passionate web developer with many years of experience and much love for flat and responsive web design!
-                I'm based in<span class="heading-primary--highlight">  New York City</span> aspernatur nisi commodi tempore eaque, saepe repellendus? Consectetur reiciendis eius adipisci unde dolorum tenetur.</span> -->
             </h1>
         </div>
-        <a href="#" class="btn btn-white btn-header">Find out more <span class="btn--arrow"> &darr;</span></a>
+        <a href="#" class="btn btn-white btn-header">Find out more <span class="btn__arrow"> &darr;</span></a>
     </header>
     <section class="section section-about">
         <h2 class="heading-secondary margin-bottom-big">
-            Section About
+            About me
         </h2>
         <div class="row">
             <picture class="section-about__picture col-1-of-2">
@@ -40,5 +45,160 @@
             </p>
         </div>
     </section>
+
+    <!-- section for adding parallax effect later with JS -->
+    <section class="section parallax">
+        &nbsp;
+    </section>
+
+    <section class="section section-projects">
+        <h2 class="heading-secondary heading-secondary__black margin-bottom-big">My Projects</h2>
+        <div class="row">
+            <div class="col-1-of-2 card">
+                <figure class="card__shape">
+                    <img src="#" alt="Project 1" class="card__img">
+                    <figcaption class="card__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quis in facere totam aperiam, beatae aliquam tempore quos. Aspernatur impedit enim.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-1-of-2">
+                <figure class="card">
+                    <img src="img/not-sorted/the-vantage-point-796427-unsplash.jpg" alt="Project 2" class="card__img">
+                    <figcaption class="card__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quis in facere totam aperiam, beatae aliquam tempore quos. Aspernatur impedit enim.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-1-of-2">
+                    <figure class="card">
+                        <img src="#" alt="Project 3" class="card__img">
+                        <figcaption class="card__description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quis in facere totam aperiam, beatae aliquam tempore quos. Aspernatur impedit enim.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-1-of-2">
+                    <figure class="card">
+                        <img src="#" alt="Project 4" class="card__img">
+                        <figcaption class="card__description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quis in facere totam aperiam, beatae aliquam tempore quos. Aspernatur impedit enim.
+                        </figcaption>
+                    </figure>
+                </div>
+        </div>
+        <a href="" class="btn btn-dark btn-projects">More Projects <span class="btn__arrow btn__arrow--white">&rAarr;</span> </a>
+    </section>
+
+    <section class="section section-skills">
+        <h2 class="heading-secondary heading-secondary__black margin-bottom-medium">
+            My skills
+        </h2>
+        <div class="row">
+            <div class="section-skills__text">
+                I am very passionate about learning new technologies and gaining new skills, so far I have good to excellent skills in all the below technologies and I am still learning! :)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2 ">
+                <h3 class="heading-tertiary heading-tertiary__black margin-bottom-medium">
+                    Design
+                </h3>
+                <div class="section-skills__icons">
+                    <i class="devicon-html5-plain-wordmark" title="HTML5"></i>
+                    <i class="devicon-css3-plain-wordmark" title="CSS3"></i>
+                    <i class="devicon-sass-original" title="SASS"></i>
+                    <i class="devicon-wordpress-plain-wordmark" title="WORDPRESS"></i>
+                    <i class="devicon-bootstrap-plain-wordmark" title="BOOTSTRAP"></i>
+                    <i class="devicon-photoshop-plain" title="PHOTOSHOP"></i>
+                </div>
+
+            </div>
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary heading-tertiary__black margin-bottom-medium">
+                    Front End
+                </h3>
+                <div class="section-skills__icons">
+                    <i class="devicon-javascript-plain" title="JAVASCRIPT"></i>
+                    <i class="devicon-jquery-plain-wordmark" title="JQUERY"></i>
+                    <i class="devicon-react-original-wordmark" title="REACT"></i>
+                </div>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary heading-tertiary__black margin-bottom-medium">
+                    Back End
+                </h3>
+                <div class="section-skills__icons">
+                    <i class="devicon-nodejs-plain-wordmark" title="NODE JS"></i>
+                    <i class="devicon-express-original-wordmark"title="EXPRESS JS"></i>
+                    <i class="devicon-python-plain-wordmark" title="PYTHON"></i>
+                    <i class="devicon-postgresql-plain-wordmark" title="POSTGRESQL"></i>
+                    <!-- <i class="devicon-mysql-plain-wordmark" title="MY SQL"></i>
+                    <i class="devicon-php-plain" title="PHP"></i> -->
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary heading-tertiary__black margin-bottom-medium">
+                    Source Control
+                </h3>
+                <div class="section-skills__icons">
+                    <i class="devicon-git-plain-wordmark" title="GIT"></i>
+                    <i class="devicon-github-plain-wordmark" title="GITHUB"></i>
+                    <i class="devicon-heroku-original-wordmark" title="HEROKU"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section for adding parallax effect later with JS -->
+    <section class="section parallax2">
+        &nbsp;
+    </section>
+
+    <section class="section section-contact">
+        <h2 class="heading-secondary heading-secondary__black margin-bottom-big">
+            Contact Me
+        </h2>
+        <form action="#" class="section-contact__form">
+
+            <label for="fullname" class="section-contact__form--label heading-tertiary heading-tertiary__black margin-bottom-small">Name</label>
+            <input type="text" class="section-contact__form--input" name="fullname" required>
+
+            <label for="email" class="section-contact__form--label heading-tertiary heading-tertiary__black margin-bottom-small">Email</label>
+            <input type="email" class="section-contact__form--input" name="email" size="100" required>
+            
+            <label for="message" class="section-contact__form--label heading-tertiary heading-tertiary__black margin-bottom-small">Message</label>
+            <textarea name="message" class="section-contact__form--textarea" id="message" cols="30" rows="10" required></textarea>
+            
+            <input type="submit" class="btn btn-dark btn--submit" Value="Send !">
+        
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__icons">
+                    <a href="#" class="footer__link--icon"><i class="icon-instagram"></i></a>
+                    <a href="#" class="footer__link--icon"><i class="icon-github-circled"></i></a>
+                    <a href="#" class="footer__link--icon"><i class="icon-linkedin"></i></a>
+                    <a href="#" class="footer__link--icon"><i class="icon-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="footer__text">
+                    <span class="footer__copyrights"> &copy; Copyrights <a href="#" class="footer__link">Redvanisation</a> 2018</span> 
+                    This website was purely designed and developed from scratch by me, using web the latest of web technologies: <span class="footer__technologies"> HTML5, CSS3, SASS, and ES6 JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
