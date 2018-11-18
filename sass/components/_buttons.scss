@@ -45,11 +45,11 @@
         border: 1px solid $color-black;
 
         &:hover {
-            transform: translate(0, -.5rem);
+            transform: translate(.5rem, 1rem) rotate(5deg);
         }
 
         &:active {
-            transform: translate(0, .2rem);
+            transform: translate(0rem, .5rem) rotate(5deg);
         }
     }
 

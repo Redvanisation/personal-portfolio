@@ -164,9 +164,9 @@ body {
   transform: translate(0, 0);
   border: 1px solid #000; }
   .btn--submit:hover {
-    transform: translate(0, -0.5rem); }
+    transform: translate(0.5rem, 1rem) rotate(5deg); }
   .btn--submit:active {
-    transform: translate(0, 0.2rem); }
+    transform: translate(0rem, 0.5rem) rotate(5deg); }
 
 .btn-white {
   background-color: #EBE9E9;
@@ -307,7 +307,7 @@ body {
   transform: rotate(-130deg); }
 
 .parallax {
-  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("https://redvanisation.github.io/personal-portfolio/img/not-sorted/anders-jilden-239-unsplash.jpg");
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("../../img/not-sorted/anders-jilden-239-unsplash.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -316,7 +316,7 @@ body {
   margin-top: -10vh; }
 
 .parallax2 {
-  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.8), rgba(3, 2, 2, 0.8)), url("https://redvanisation.github.io/personal-portfolio/img/not-sorted/fabian-grohs-597395-unsplash.jpg");
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.8), rgba(3, 2, 2, 0.8)), url("../../img/not-sorted/fabian-grohs-597395-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -422,13 +422,17 @@ body {
       border-radius: 2rem;
       display: inline-block;
       width: 25rem;
-      height: 25rem; }
+      height: 25rem;
+      box-shadow: 0 0.3rem 2rem rgba(255, 255, 255, 0.5);
+      transition: transform .2s; }
+      .section-about__picture--img:hover {
+        transform: scale(1.2); }
   .section-about__text {
     display: block;
     float: left;
     position: absolute;
-    top: 8rem;
-    left: 40rem;
+    top: 9rem;
+    left: 42rem;
     text-align: left;
     font-size: 1.7rem;
     letter-spacing: .2rem; }
@@ -436,8 +440,8 @@ body {
     display: inline-block;
     font-size: 5rem;
     position: absolute;
-    top: 1rem;
-    left: 30rem;
+    top: 2rem;
+    left: 33rem;
     transition: transform .2s; }
     .section-about--h3:hover {
       transform: scale(1.5) rotate(5deg); }
