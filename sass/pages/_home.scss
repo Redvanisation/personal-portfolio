@@ -11,7 +11,7 @@
         float: left;
         &--img {
             background-color: $color-primary-light;
-            border-radius: 50%;
+            border-radius: 2rem;
             display: inline-block;
             width: 25rem;
             height: 25rem;
@@ -36,6 +36,11 @@
         position: absolute;
         top: 1rem;
         left: 30rem;
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.5) rotate(5deg);
+        }
     }
 
     & > * {
@@ -56,8 +61,10 @@
 }
 
 .section-skills {
-    padding: 10rem 10rem 30rem 10rem;
-    background-image: linear-gradient(to bottom right, $color-white, $color-grey-light);
+    padding: 15rem 10rem 35rem 10rem;
+    // background-image: linear-gradient(to bottom right, $color-primary-light, $color-grey-light);
+    background-color: $color-grey-light;
+    margin-top: -10vh;
     
 
     &__text {

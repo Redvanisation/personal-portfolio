@@ -71,6 +71,16 @@ font-family: 'Raleway', 'Lato', sans-serif;
         }
 
     }
+
+    &__white {
+        color: $color-grey-light;
+        text-shadow: 0 .4rem 1rem rgba($color-white, .4); 
+
+        &:hover {
+            text-shadow: 0 .5rem 1rem rgba($color-white, .4);
+        }
+
+    }
 }
 
 .heading-tertiary {

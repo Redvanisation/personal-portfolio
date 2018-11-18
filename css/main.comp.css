@@ -64,6 +64,11 @@ body {
     text-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4); }
     .heading-secondary__black:hover {
       text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
+  .heading-secondary__white {
+    color: #EBE9E9;
+    text-shadow: 0 0.4rem 1rem rgba(255, 255, 255, 0.4); }
+    .heading-secondary__white:hover {
+      text-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4); }
 
 .heading-tertiary {
   display: inline-block;
@@ -131,6 +136,7 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 900;
+  outline: none;
   transition: all .2s;
   box-shadow: 0 0.3rem 2rem rgba(255, 255, 255, 0.5); }
 
@@ -188,8 +194,120 @@ body {
 .btn-projects:active {
   transform: skew(-5.5deg) translate(0, 1.5rem); }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  background-color: #EBE9E9;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 5000;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.5); }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-image: radial-gradient(#575757, #030202);
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  z-index: 3000;
+  transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.navigation__nav {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 4000;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  color: #EBE9E9;
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #EBE9E9 50%);
+  background-size: 230%;
+  transition: all .4s; }
+  .navigation__link:link span, .navigation__link:visited span {
+    display: inline-block;
+    margin-right: 1.5rem; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #191919;
+  transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+  left: 0; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    display: inline-block;
+    background-color: #030202; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(130deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-130deg); }
+
 .parallax {
-  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("../../img/not-sorted/anders-jilden-239-unsplash.jpg");
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("https://redvanisation.github.io/personal-portfolio/img/not-sorted/anders-jilden-239-unsplash.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -198,7 +316,7 @@ body {
   margin-top: -10vh; }
 
 .parallax2 {
-  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.8), rgba(3, 2, 2, 0.8)), url("../../img/not-sorted/fabian-grohs-597395-unsplash.jpg");
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.8), rgba(3, 2, 2, 0.8)), url("https://redvanisation.github.io/personal-portfolio/img/not-sorted/fabian-grohs-597395-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -301,7 +419,7 @@ body {
     float: left; }
     .section-about__picture--img {
       background-color: #575757;
-      border-radius: 50%;
+      border-radius: 2rem;
       display: inline-block;
       width: 25rem;
       height: 25rem; }
@@ -319,7 +437,10 @@ body {
     font-size: 5rem;
     position: absolute;
     top: 1rem;
-    left: 30rem; }
+    left: 30rem;
+    transition: transform .2s; }
+    .section-about--h3:hover {
+      transform: scale(1.5) rotate(5deg); }
   .section-about > * {
     transform: skewY(-5.5deg); }
 
@@ -333,8 +454,9 @@ body {
     transform: skewY(-5.5deg); }
 
 .section-skills {
-  padding: 10rem 10rem 30rem 10rem;
-  background-image: linear-gradient(to bottom right, #fff, #EBE9E9); }
+  padding: 15rem 10rem 35rem 10rem;
+  background-color: #EBE9E9;
+  margin-top: -10vh; }
   .section-skills__text {
     font-size: 1.7rem; }
   .section-skills [class^="devicon-"] {
