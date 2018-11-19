@@ -12,6 +12,12 @@
         outline: none;
         transition: all .2s;
         @include boxShadowWt;
+
+        @include respond(phone) {
+            font-size: 1rem;
+            padding: 1rem 3rem;
+            margin-top: 2rem;
+        }
     }
 
     &:hover {
@@ -36,6 +42,17 @@
         &--white {
             top: 1.5rem;
             left: 18rem;
+
+            @include respond(phone) {
+                margin-left: 1rem;
+
+            }
+        }
+
+        @include respond(phone) {
+            top: 1.23rem;
+            left: 10.3rem;
+            font-size: 1.5rem;
         }
     }
 

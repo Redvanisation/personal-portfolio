@@ -5,8 +5,19 @@
 }
 
 html {
-    font-size: 62.5%;
-    // background-color: $color-primary-light;
+    // defines what 1rem should be
+    font-size: 62.5%; // 1 rem = 10px defined by me at the beginning
+
+    @include respond(tab-land) {
+        font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25 
+    }
+    @include respond(tab-port) {
+        font-size: 50%; // 1rem = 8px, 8/16 = 50
+    }
+
+    @include respond(big-desk) {
+        font-size: 75%; // 1rem = 12px, 12/16 = 75
+    }
 }
 
 body {
@@ -20,7 +31,7 @@ body {
 }
 
 
-// ::selection {
-//     background-color: black;
-//     color: white;
-// }
+::selection {
+    background-color: $color-grey-light;
+    color: $color-primary;
+}
