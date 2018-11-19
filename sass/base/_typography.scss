@@ -25,12 +25,15 @@ body{
             font-size: 3.5rem;
             letter-spacing: .2rem;
         }
+
+        @media only screen and (max-width: 700px ) and (max-height: 550px) {
+            font-size: 4rem;
+        }
     }
     
     &--text {
         text-transform: uppercase;
         display: inline-block;
-        // text-align: justify;
         line-height: 1.5;
         letter-spacing: .2rem;
         font-weight: 600;
@@ -47,6 +50,10 @@ body{
         @include respond(phone) {
             font-size: 1.5rem;
             letter-spacing: .2rem;
+        }
+
+        @media only screen and (max-width: 700px ) and (max-height: 550px) {
+            font-size: 2.5rem;
         }
 
     }

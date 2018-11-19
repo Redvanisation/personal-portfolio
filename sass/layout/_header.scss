@@ -19,6 +19,7 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90vh);
     }
 
+    
     &__box {
         width: 80%;
         height: 60%;
@@ -26,6 +27,11 @@
         top: 50%;
         left: 5%;
         transform: translateY(-40%);
+        
+        @media screen and (max-width: 700px) and (max-height: 550px) {
+            transform: translateY(-60%);
+
+        }
     }
 
 }
