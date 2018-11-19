@@ -1,8 +1,10 @@
+// for github pages images: https://redvanisation.github.io/personal-portfolio/
+
 .header {
-    height: 100vh;
+    height: 105vh;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
-    background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('../img/not-sorted/fabian-grohs-610515-unsplash.jpg');
+    background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('https://redvanisation.github.io/personal-portfolio/img/background/header-1x.jpg');
     background-size: cover;
     position: relative;
 

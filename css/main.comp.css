@@ -379,13 +379,13 @@ body {
   transform: rotate(-130deg); }
 
 .parallax {
-  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("https://redvanisation.github.io/personal-portfolio/img/not-sorted/anders-jilden-239-unsplash.jpg");
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("https://redvanisation.github.io/personal-portfolio/img/background/nyc-1x.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 120vh;
-  margin-top: -10vh; }
+  height: 130vh;
+  margin-top: -15vh; }
   @media only screen and (max-width: 75em) {
     .parallax {
       height: 80vh; } }
@@ -394,12 +394,12 @@ body {
       height: 100vh; } }
 
 .parallax2 {
-  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.8), rgba(3, 2, 2, 0.8)), url("https://redvanisation.github.io/personal-portfolio/img/not-sorted/fabian-grohs-597395-unsplash.jpg");
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.8), rgba(3, 2, 2, 0.8)), url("https://redvanisation.github.io/personal-portfolio/img/background/dev-1x.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 130vh;
   -webkit-clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
   margin-top: -35vh; }
@@ -583,10 +583,10 @@ body {
     width: calc(3 * ((100% - 6rem * 3) / 4) + (6rem * 2)); }
 
 .header {
-  height: 100vh;
+  height: 105vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
-  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("../img/not-sorted/fabian-grohs-610515-unsplash.jpg");
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("https://redvanisation.github.io/personal-portfolio/img/background/header-1x.jpg");
   background-size: cover;
   position: relative; }
   @media only screen and (max-width: 75em) {
@@ -612,7 +612,7 @@ body {
 
 .section-about {
   background-image: linear-gradient(to right bottom, #191919, #030202);
-  margin-top: -10vh;
+  margin-top: -15vh;
   padding: 10rem 10rem 30rem 10rem;
   color: #EBE9E9;
   text-align: center;
@@ -711,7 +711,7 @@ body {
     transform: skewY(-5.5deg); }
 
 .section-projects {
-  margin-top: -10vh;
+  margin-top: -15vh;
   padding: 10rem 10rem 10rem 10rem;
   transform: skewY(5.5deg);
   background-image: linear-gradient(to right bottom, #575757, #191919);
@@ -745,7 +745,7 @@ body {
       padding: 20rem 10rem 45rem 10rem; } }
 
 .section-contact {
-  margin-top: -10vh;
+  margin-top: -15vh;
   padding: 10rem 10rem 30rem 10rem;
   transform: skewY(5.5deg);
   background-image: linear-gradient(to right bottom, #575757, #191919);

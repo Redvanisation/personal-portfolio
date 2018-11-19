@@ -1,11 +1,13 @@
+// for github pages images: https://redvanisation.github.io/personal-portfolio/
+
 .parallax {
-    background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('https://redvanisation.github.io/personal-portfolio/img/not-sorted/anders-jilden-239-unsplash.jpg');
+    background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('https://redvanisation.github.io/personal-portfolio/img/background/nyc-1x.jpg');
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 120vh;
-    margin-top: -10vh;
+    height: 130vh;
+    margin-top: -15vh;
     // transform: skewY(-12deg);
     // position: relative;
     // z-index: 9999;
@@ -20,12 +22,12 @@
 }
 
 .parallax2 {
-    background-image: linear-gradient(to right, rgba($color-primary, .8), rgba($color-primary-dark, .8)), url('https://redvanisation.github.io/personal-portfolio/img/not-sorted/fabian-grohs-597395-unsplash.jpg');
+    background-image: linear-gradient(to right, rgba($color-primary, .8), rgba($color-primary-dark, .8)), url('https://redvanisation.github.io/personal-portfolio/img/background/dev-1x.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 130vh;
     -webkit-clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
     margin-top: -35vh;

@@ -1,6 +1,6 @@
 .section-about {
     background-image: linear-gradient(to right bottom, rgba($color-primary, 1), rgba($color-primary-dark, 1));
-    margin-top: -10vh;
+    margin-top: -15vh;
     padding: 10rem 10rem 30rem 10rem;
     color: $color-grey-light;
     text-align: center;
@@ -131,7 +131,7 @@
 }
 
 .section-projects {
-    margin-top: -10vh;
+    margin-top: -15vh;
     padding: 10rem 10rem 10rem 10rem;
     transform: skewY(5.5deg);
     background-image: linear-gradient(to right bottom, $color-primary-light ,$color-primary);
@@ -184,7 +184,7 @@
 }
 
 .section-contact {
-    margin-top: -10vh;
+    margin-top: -15vh;
     padding: 10rem 10rem 30rem 10rem;
     transform: skewY(5.5deg);
     background-image: linear-gradient(to right bottom, $color-primary-light ,$color-primary);
