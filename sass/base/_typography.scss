@@ -1,16 +1,14 @@
 body{
-font-family: 'Raleway', 'Lato', sans-serif;
-
+    font-family: 'Raleway', 'Lato', sans-serif;
 }
 
 .heading-primary {
-    
     font-family: 'Lato', 'Raleway', sans-serif;
     color: $color-grey-light;
     width: 100%;
     
     &--h1 {
-        display: block;
+        display: inline-block;
         font-size: 5.5rem;
         text-transform: uppercase;
         letter-spacing: 1rem;
@@ -18,12 +16,20 @@ font-family: 'Raleway', 'Lato', sans-serif;
         padding: 1rem 3rem 1rem 2rem;
         font-weight: 900;
         background-color: rgba($color-primary-dark, .7);
-        width: 90%;
+
+        @include respond(tab-port) {
+            font-size: 4.5rem;
+        }
+
+        @include respond(phone) {
+            font-size: 3.5rem;
+            letter-spacing: .2rem;
+        }
     }
     
     &--text {
         text-transform: uppercase;
-        display: block;
+        display: inline-block;
         // text-align: justify;
         line-height: 1.5;
         letter-spacing: .2rem;
@@ -33,18 +39,37 @@ font-family: 'Raleway', 'Lato', sans-serif;
         padding: 0 2rem 1rem 4rem;
         margin-left: 2rem;
         width: 90%;
+
+        @include respond(tab-port) {
+            font-size: 2.5rem;
+        }
+
+        @include respond(phone) {
+            font-size: 1.5rem;
+            letter-spacing: .2rem;
+        }
+
     }
 
     &--highlight {
         color: $color-grey;
         display: inline-block;
-        transition: all .2s;
+        transition: all .3s;
         margin-left: 1rem;
         
         &:hover {
             transform: scale(1.1) rotate(5deg);
             // @include txtShadowWt;
         }
+
+        @include respond(tab-port) {
+            margin-left: .5rem;
+        }
+        
+        @include respond(phone) {
+            margin-left: .5rem;
+        }
+
     }
 }
 
@@ -56,6 +81,14 @@ font-family: 'Raleway', 'Lato', sans-serif;
     letter-spacing: 1rem;
     @include txtShadowWt;
     transition: all .2s;
+
+    @include respond(phone) {
+        font-size: 2.8rem;
+    }
+
+    @include respond(phone-sml) {
+        font-size: 2.3rem;
+    }
 
     &:hover {
         transform: scale(1.5) rotate(5deg);
@@ -116,7 +149,7 @@ font-family: 'Raleway', 'Lato', sans-serif;
         &--textarea {
             font-size: 2rem;
             color: $color-grey;
-            text-align: center;
+            // text-align: center;
             font-weight: 200;
         }
 

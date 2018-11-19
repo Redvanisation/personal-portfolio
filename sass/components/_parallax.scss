@@ -9,6 +9,14 @@
     // transform: skewY(-12deg);
     // position: relative;
     // z-index: 9999;
+
+    @include respond(tab-land) {
+        height: 80vh;
+    }
+
+    @include respond(tab-port) {
+        height: 100vh;
+    }
 }
 
 .parallax2 {
@@ -18,7 +26,24 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 120vh;
-    -webkit-clip-path: polygon(0 0, 100% 30vh, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
     margin-top: -35vh;
+
+    @include respond(tab-land) {
+        height: 80vh;
+        -webkit-clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
+    }
+
+    @include respond(tab-port) {
+        height: 100vh;
+        -webkit-clip-path: polygon(0 0, 100% 12vh, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 12vh, 100% 100%, 0 100%);
+    }
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0 100%);
+    }
 }

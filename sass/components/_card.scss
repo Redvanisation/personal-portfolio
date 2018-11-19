@@ -1,10 +1,7 @@
 .card {
-    // width: 15vw;
     height: 30rem;
     border-radius: 3px;
-    // border: 1px solid black;
     overflow: hidden;
-    // transform: skew(-12deg);
     font-size: $global-font-size;
     padding: 2rem 3rem;
     @include boxShadowBlk;
@@ -29,9 +26,7 @@
         text-align: center;
         width: 100%;
         padding: 2rem;
-        // text-transform: uppercase;
         color: $color-grey-light;
-        // font-weight: 600;
         letter-spacing: .2rem;
         backface-visibility: hidden;
         opacity: 0;
@@ -53,7 +48,57 @@
 
     }
 
-    // & > * {
-    //     transform: skew(12deg);
-    // }
+    @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) {
+        height: 60rem;
+        background-color: $color-primary;
+
+        @include respond(phone) {
+            height: 80vh;
+        }
+
+        @include respond(phone-sml) {
+            padding: 0;
+        }
+    
+        &__img {
+            height: 50%;
+            filter: brightness(60%);
+        }
+    
+        &__description {
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, 80%);
+            padding: 2rem 4rem;
+            opacity: 1;
+
+            @include respond(phone) {
+                transform: translate(-50%, 60%);
+                font-size: 1.5rem;
+            }
+
+            @include respond(phone-sml) {
+                font-size: 1rem;
+                transform: translate(-50%, 50%);
+                padding: 3rem .5rem;
+            }
+        }
+    
+        &:hover {
+            transform: scale(1.08) translateY(-2rem);
+        }
+    
+        &:hover &__description {
+            transform: translate(-50%, 80%) scale(1.1);
+        }
+    
+        &:hover &__img {
+            transform: translateX(-4rem) scale(1.5);
+            filter: blur(0) brightness(75%);
+    
+        }
+    
+    }
 }

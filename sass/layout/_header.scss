@@ -6,6 +6,19 @@
     background-size: cover;
     position: relative;
 
+    
+    @include respond(tab-land) {
+        height: 85vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    @include respond(tab-port) {
+        height: 100vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90vh);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90vh);
+    }
+
     &__box {
         width: 80%;
         height: 60%;

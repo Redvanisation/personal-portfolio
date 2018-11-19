@@ -20,15 +20,16 @@
         box-shadow: 0 .5rem 4rem rgba($color-black, .5);
         
         
-        // @include respond(tab-port) {
-        //     top: 4rem;
-        //     right: 4rem;
-        // }
+        @include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
     
-        // @include respond(phone) {
-        //     top: 3rem;
-        //     right: 3rem;
-        // }
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
+
     }
     
     &__background {
@@ -43,15 +44,15 @@
         transition: all .8s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 
-        // @include respond(tab-port) {
-        //     top: 4.5rem;
-        //     right: 4.5rem;
-        // }
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
     
-        // @include respond(phone) {
-        //     top: 3.5rem;
-        //     right: 3.5rem;
-        // }
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {
