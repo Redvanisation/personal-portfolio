@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Redvan's Portfolio</title>
+    <title>Redvan K Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -30,16 +30,16 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link"><span>01</span>About</a>
+                    <a href="#section-about" class="navigation__link"><span>01</span>About</a>
                 </li>
                 <li class="navigation__item">                    
-                    <a href="#" class="navigation__link"><span>02</span>Projects</a>
+                    <a href="#section-projects" class="navigation__link"><span>02</span>Projects</a>
                 </li>
                 <li class="navigation__item">
-                        <a href="#" class="navigation__link"><span>03</span>Stack</a>
+                        <a href="#section-skills" class="navigation__link"><span>03</span>Stack</a>
                 </li>
                 <li class="navigation__item">
-                        <a href="#" class="navigation__link"><span>04</span>Contact</a>
+                        <a href="#section-contact" class="navigation__link"><span>04</span>Contact</a>
                 </li>
                 <li class="navigation__item">
                         <a href="#" class="navigation__link"><span>05</span>CV</a>
@@ -55,17 +55,17 @@
                 <span class="heading-primary--text">a creative and passionate web developer based in <span class="heading-primary--highlight"> New York city</span></span>
             </h1>
         </div>
-        <a href="#" class="btn btn-white btn-header">Find out more <span class="btn__arrow"> &darr;</span></a>
+        <a href="#section-about" class="btn btn-white btn-header">Find out more <span class="btn__arrow"> &darr;</span></a>
     </header>
     <section class="section section-about">
-        <h2 class="heading-secondary margin-bottom-big">
+        <h2 class="heading-secondary margin-bottom-big" data-scroll id="section-about">
             About me
         </h2>
         <div class="section-about__container">
-            <picture class="section-about__picture col-1-of-2">
-                <!-- <source srcset="#"> -->
-                <img src="#" alt="Picture of Redvan" class="section-about__picture--img">
-            </picture>
+            
+            <img srcset="img/html-imgs/redvan-1x.jpg 300w, img/html-imgs/redvan-2x.jpg 960w"
+            sizes="(max-width: 900px) 28vw, (max-width: 600px) 25vw, 300px" src="img/html-imgs/redvan-2x.jpg" alt="Picture of Redvan" class="section-about__picture--img">
+
             <h3 class="section-about--h3">Redvan</h3>
             <p class="section-about__text col-1-of-2">
                 I'm a very passionate web developer with many years of experience and much love for flat and responsive web design!
@@ -79,8 +79,8 @@
         &nbsp;
     </section>
 
-    <section class="section section-projects">
-        <h2 class="heading-secondary heading-secondary__black margin-bottom-big">My Projects</h2>
+    <section class="section section-projects" >
+        <h2 class="heading-secondary__white heading-secondary margin-bottom-big" data-scroll id="section-projects">My Projects</h2>
         <div class="row">
             <div class="col-1-of-2 card">
                 <figure class="card__shape">
@@ -117,11 +117,11 @@
                     </figure>
                 </div>
         </div>
-        <a href="" class="btn btn-dark btn-projects">More Projects <span class="btn__arrow--white">&rAarr;</span> </a>
+        <a href="projects.html" class="btn btn-white btn-projects">More Projects <span class="btn__arrow--white">&rAarr;</span> </a>
     </section>
 
     <section class="section section-skills">
-        <h2 class="heading-secondary heading-secondary__black margin-bottom-medium">
+        <h2 class="heading-secondary heading-secondary__black margin-bottom-medium" data-scroll id="section-skills">
             My skills
         </h2>
         <div class="row">
@@ -189,21 +189,21 @@
     </section>
 
     <section class="section section-contact">
-        <h2 class="heading-secondary heading-secondary__black margin-bottom-big">
+        <h2 class="heading-secondary heading-secondary__white margin-bottom-big" data-scroll id="section-contact">
             Contact Me
         </h2>
-        <form action="#" class="section-contact__form">
+        <form action="https://formspree.io/redvanisation@gmail.com" method="POST" class="section-contact__form">
 
-            <label for="fullname" class="section-contact__form--label heading-tertiary heading-tertiary__black margin-bottom-small">Name</label>
+            <label for="fullname" class="section-contact__form--label heading-tertiary heading-tertiary__white margin-bottom-small">Name</label>
             <input type="text" class="section-contact__form--input" name="fullname" required>
 
-            <label for="email" class="section-contact__form--label heading-tertiary heading-tertiary__black margin-bottom-small">Email</label>
+            <label for="email" class="section-contact__form--label heading-tertiary heading-tertiary__white margin-bottom-small">Email</label>
             <input type="email" class="section-contact__form--input" name="email" size="100" required>
             
-            <label for="message" class="section-contact__form--label heading-tertiary heading-tertiary__black margin-bottom-small">Message</label>
+            <label for="message" class="section-contact__form--label heading-tertiary heading-tertiary__white margin-bottom-small">Message</label>
             <textarea name="message" class="section-contact__form--textarea" id="message" cols="30" rows="10" required></textarea>
             
-            <input type="submit" class="btn btn-dark btn--submit" Value="  Send   &rAarr;">
+            <input type="submit" class="btn btn-white btn--submit" Value="  Send   &rAarr;">
         
         </form>
     </section>
@@ -212,21 +212,24 @@
         <div class="row">
             <div class="col-1-of-2">
                 <div class="footer__icons">
-                    <a href="#" class="footer__link--icon"><i class="icon-instagram"></i></a>
-                    <a href="#" class="footer__link--icon"><i class="icon-github-circled"></i></a>
-                    <a href="#" class="footer__link--icon"><i class="icon-linkedin"></i></a>
-                    <a href="#" class="footer__link--icon"><i class="icon-twitter"></i></a>
+                    <a href="https://www.instagram.com/mr_reeed/" target="_blank" class="footer__link--icon"><i class="icon-instagram"></i></a>
+                    <a href="https://github.com/Redvanisation" target="_blank" class="footer__link--icon"><i class="icon-github-circled"></i></a>
+                    <a href="https://www.linkedin.com/in/redvanisation/" target="_blank" class="footer__link--icon"><i class="icon-linkedin"></i></a>
+                    <a href="https://twitter.com/Redvano" target="_blank" class="footer__link--icon"><i class="icon-twitter"></i></a>
                 </div>
             </div>
             <div class="col-1-of-2">
                 <div class="footer__text">
-                    <span class="footer__copyrights"> &copy; Copyrights <a href="#" class="footer__link">Redvanisation</a> 2018</span> 
+                    <span class="footer__copyrights"> &copy; Copyrights <a href="https://github.com/Redvanisation" target="_blank" class="footer__link">Redvanisation</a> 2018</span> 
                     This website was purely designed and developed from scratch by me, using web the latest of web technologies: <span class="footer__technologies"> HTML5, CSS3, SASS, and ES6 JavaScript</span>
                 </div>
             </div>
         </div>
     </footer>
-
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        	var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 </html>

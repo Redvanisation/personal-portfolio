@@ -17,7 +17,7 @@
 // TEXT SHADOWS
 
 @mixin txtShadowWt {
-    text-shadow: 0 .5rem 2.5rem rgba($color-white, .4);
+    text-shadow: 0 .5rem 2.5rem rgba($color-grey-light, .4);
 }
 
 @mixin txtShadowBlk {

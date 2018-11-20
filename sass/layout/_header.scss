@@ -1,16 +1,23 @@
 // for github pages images: https://redvanisation.github.io/personal-portfolio/
 
 .header {
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (max-resolution: 192dpi) and (min-width: 125em) {
+        background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('https://redvanisation.github.io/personal-portfolio/img/background/header-2x.jpg');
+    }
+    background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('https://redvanisation.github.io/personal-portfolio/img/background/header-1x.jpg');
     height: 105vh;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
-    background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('https://redvanisation.github.io/personal-portfolio/img/background/header-1x.jpg');
     background-size: cover;
     position: relative;
 
     
+
+    
     @include respond(tab-land) {
-        height: 85vh;
+        height: 90vh;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }

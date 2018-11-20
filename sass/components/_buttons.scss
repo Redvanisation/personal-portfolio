@@ -18,6 +18,7 @@
             padding: 1rem 3rem;
             margin-top: 2rem;
         }
+
     }
 
     &:hover {
@@ -59,7 +60,6 @@
     &--submit {
         margin-top: 4rem;
         transform: translate(0, 0);
-        border: 1px solid $color-black;
 
         &:hover {
             transform: translate(.5rem, 1rem) rotate(5deg);
@@ -81,6 +81,8 @@
 .btn-dark {
     background-color: $color-primary-dark;
     color: $color-grey-light;
+    border: 1px solid $color-black;
+
     box-shadow: 0 1rem 2.5rem rgba($color-black, .5) !important;
 
     &:hover {
