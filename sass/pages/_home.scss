@@ -66,7 +66,7 @@
     &__text {
         display: inline-block;
         position: absolute;
-        top: 9rem;
+        top: 10rem;
         left: 42rem;
         text-align: left;
         font-size: $global-font-size;
@@ -99,9 +99,14 @@
         top: 2rem;
         left: 33rem;
         transition: transform .2s;
+        color: $color-grey-light;
+        @include txtShadowBlk;
+        background-color: rgba($color-grey, .5);
+        padding: .2rem 1.5rem;
+        border-radius: 3px;
 
         &:hover {
-            transform: scale(1.5) rotate(5deg);
+            transform: scale(1.4) rotate(5deg);
             @include respond(phone-sml) {
                 transform: translate(-50%, -50%) scale(1.5) rotate(5deg);
             }
@@ -135,6 +140,8 @@
     padding: 10rem 10rem 10rem 10rem;
     transform: skewY(5.5deg);
     background-image: linear-gradient(to right bottom, $color-primary-light ,$color-primary);
+    // background-color: $color-primary-light;
+    color: $color-white;
     position: relative;
 
 
@@ -151,6 +158,9 @@
 .section-skills {
     padding: 15rem 10rem 35rem 10rem;
     background-color: $color-grey-light;
+    // background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1), rgba($color-primary-white, 1));
+    // color: $color-grey-light;
+
     margin-top: -10vh;
     
 
@@ -188,6 +198,7 @@
     padding: 10rem 10rem 30rem 10rem;
     transform: skewY(5.5deg);
     background-image: linear-gradient(to right bottom, $color-primary-light ,$color-primary);
+    // background-color: $color-primary-light;
     position: relative;
 
     & > * {
@@ -219,7 +230,7 @@
         &--input,
         &--textarea {
             display: block;
-            border: 1px solid $color-black;
+            border: .5px solid $color-grey-light;
             width: 60%;
 
             @include respond(phone) {
@@ -231,7 +242,7 @@
             &:focus,
             &:hover {
                 transform: scale(1.1);
-                background-color: rgba($color-black, .5);
+                background-color: rgba($color-primary, .2);
             }
         }
         

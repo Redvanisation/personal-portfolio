@@ -62,7 +62,14 @@ body{
         color: $color-grey;
         display: inline-block;
         transition: all .3s;
-        margin-left: 1rem;
+        margin-right: 1rem;
+
+        color: $color-grey-light;
+        @include txtShadowBlk;
+        background-color: rgba($color-grey, .5);
+        padding: 0 .5rem;
+        border-radius: 3px;
+
         
         &:hover {
             transform: scale(1.1) rotate(5deg);
@@ -70,11 +77,11 @@ body{
         }
 
         @include respond(tab-port) {
-            margin-left: .5rem;
+            margin-right: 0;
         }
         
         @include respond(phone) {
-            margin-left: .5rem;
+            margin-right: 0;
         }
 
     }
@@ -99,7 +106,7 @@ body{
 
     &:hover {
         transform: scale(1.5) rotate(5deg);
-        text-shadow: 0 .5rem 1rem rgba($color-white, .4);
+        text-shadow: 0 .5rem 1rem rgba($color-grey-light, .4);
 
     }
 
@@ -114,10 +121,10 @@ body{
 
     &__white {
         color: $color-grey-light;
-        text-shadow: 0 .4rem 1rem rgba($color-white, .4); 
+        text-shadow: 0 .4rem 1rem rgba($color-grey-light, .4); 
 
         &:hover {
-            text-shadow: 0 .5rem 1rem rgba($color-white, .4);
+            text-shadow: 0 .5rem 1rem rgba($color-grey-light, .4);
         }
 
     }
@@ -146,6 +153,11 @@ body{
         }
 
     }
+
+    &__white {
+        color: $color-grey-light;
+        box-shadow: 0 5rem 10rem rgba($color-white, 0);
+    }
 }
 
 
@@ -155,7 +167,7 @@ body{
         &--input,
         &--textarea {
             font-size: 2rem;
-            color: $color-grey;
+            color: $color-grey-light;
             // text-align: center;
             font-weight: 200;
         }

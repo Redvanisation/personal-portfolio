@@ -77,15 +77,20 @@ body {
     color: #8D8B8B;
     display: inline-block;
     transition: all .3s;
-    margin-left: 1rem; }
+    margin-right: 1rem;
+    color: #EBE9E9;
+    text-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4);
+    background-color: rgba(141, 139, 139, 0.5);
+    padding: 0 .5rem;
+    border-radius: 3px; }
     .heading-primary--highlight:hover {
       transform: scale(1.1) rotate(5deg); }
     @media only screen and (max-width: 56.25em) {
       .heading-primary--highlight {
-        margin-left: .5rem; } }
+        margin-right: 0; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--highlight {
-        margin-left: .5rem; } }
+        margin-right: 0; } }
 
 .heading-secondary {
   display: inline-block;
@@ -93,7 +98,7 @@ body {
   text-transform: uppercase;
   line-height: 1.7;
   letter-spacing: 1rem;
-  text-shadow: 0 0.5rem 2.5rem rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0.5rem 2.5rem rgba(235, 233, 233, 0.4);
   transition: all .2s; }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
@@ -103,16 +108,16 @@ body {
       font-size: 2.3rem; } }
   .heading-secondary:hover {
     transform: scale(1.5) rotate(5deg);
-    text-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4); }
+    text-shadow: 0 0.5rem 1rem rgba(235, 233, 233, 0.4); }
   .heading-secondary__black {
     text-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4); }
     .heading-secondary__black:hover {
       text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
   .heading-secondary__white {
     color: #EBE9E9;
-    text-shadow: 0 0.4rem 1rem rgba(255, 255, 255, 0.4); }
+    text-shadow: 0 0.4rem 1rem rgba(235, 233, 233, 0.4); }
     .heading-secondary__white:hover {
-      text-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4); }
+      text-shadow: 0 0.5rem 1rem rgba(235, 233, 233, 0.4); }
 
 .heading-tertiary {
   display: inline-block;
@@ -120,7 +125,7 @@ body {
   text-transform: uppercase;
   line-height: 1.7;
   letter-spacing: 1rem;
-  text-shadow: 0 0.5rem 2.5rem rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0.5rem 2.5rem rgba(235, 233, 233, 0.4);
   transition: all .2s; }
   .heading-tertiary:hover {
     transform: scale(1.5);
@@ -129,10 +134,13 @@ body {
     text-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4); }
     .heading-tertiary__black:hover {
       text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
+  .heading-tertiary__white {
+    color: #EBE9E9;
+    box-shadow: 0 5rem 10rem rgba(255, 255, 255, 0); }
 
 .section-contact__form--input, .section-contact__form--textarea {
   font-size: 2rem;
-  color: #8D8B8B;
+  color: #EBE9E9;
   font-weight: 200; }
 
 .section-contact__form--textarea {
@@ -217,8 +225,7 @@ body {
 
 .btn--submit {
   margin-top: 4rem;
-  transform: translate(0, 0);
-  border: 1px solid #000; }
+  transform: translate(0, 0); }
   .btn--submit:hover {
     transform: translate(0.5rem, 1rem) rotate(5deg); }
   .btn--submit:active {
@@ -231,6 +238,7 @@ body {
 .btn-dark {
   background-color: #030202;
   color: #EBE9E9;
+  border: 1px solid #000;
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.5) !important; }
   .btn-dark:hover {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5) !important; }
@@ -278,7 +286,7 @@ body {
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
-  background-image: radial-gradient(#575757, #030202);
+  background-image: radial-gradient(rgba(87, 87, 87, 0.95), rgba(3, 2, 2, 0.95));
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
@@ -386,6 +394,9 @@ body {
   background-repeat: no-repeat;
   height: 130vh;
   margin-top: -15vh; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (max-resolution: 192dpi) and (min-width: 125em) {
+    .parallax {
+      background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("https://redvanisation.github.io/personal-portfolio/img/background/nyc-2x.jpg"); } }
   @media only screen and (max-width: 75em) {
     .parallax {
       height: 80vh; } }
@@ -403,6 +414,9 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
   margin-top: -35vh; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (max-resolution: 192dpi) and (min-width: 125em) {
+    .parallax2 {
+      background-image: linear-gradient(to right, rgba(25, 25, 25, 0.8), rgba(3, 2, 2, 0.8)), url("https://redvanisation.github.io/personal-portfolio/img/background/dev-2x.jpg"); } }
   @media only screen and (max-width: 75em) {
     .parallax2 {
       height: 80vh;
@@ -583,15 +597,18 @@ body {
     width: calc(3 * ((100% - 6rem * 3) / 4) + (6rem * 2)); }
 
 .header {
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("https://redvanisation.github.io/personal-portfolio/img/background/header-1x.jpg");
   height: 105vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
-  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("https://redvanisation.github.io/personal-portfolio/img/background/header-1x.jpg");
   background-size: cover;
   position: relative; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (max-resolution: 192dpi) and (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right, rgba(25, 25, 25, 0.85), rgba(3, 2, 2, 0.85)), url("https://redvanisation.github.io/personal-portfolio/img/background/header-2x.jpg"); } }
   @media only screen and (max-width: 75em) {
     .header {
-      height: 85vh;
+      height: 90vh;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media only screen and (max-width: 56.25em) {
@@ -661,7 +678,7 @@ body {
   .section-about__text {
     display: inline-block;
     position: absolute;
-    top: 9rem;
+    top: 10rem;
     left: 42rem;
     text-align: left;
     font-size: 1.7rem;
@@ -687,9 +704,14 @@ body {
     position: absolute;
     top: 2rem;
     left: 33rem;
-    transition: transform .2s; }
+    transition: transform .2s;
+    color: #EBE9E9;
+    text-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4);
+    background-color: rgba(141, 139, 139, 0.5);
+    padding: .2rem 1.5rem;
+    border-radius: 3px; }
     .section-about--h3:hover {
-      transform: scale(1.5) rotate(5deg); }
+      transform: scale(1.4) rotate(5deg); }
       @media only screen and (max-width: 26.5625em) {
         .section-about--h3:hover {
           transform: translate(-50%, -50%) scale(1.5) rotate(5deg); } }
@@ -715,6 +737,7 @@ body {
   padding: 10rem 10rem 10rem 10rem;
   transform: skewY(5.5deg);
   background-image: linear-gradient(to right bottom, #575757, #191919);
+  color: #fff;
   position: relative; }
   .section-projects > * {
     transform: skewY(-5.5deg); }
@@ -768,14 +791,14 @@ body {
     outline: none; }
   .section-contact__form--input, .section-contact__form--textarea {
     display: block;
-    border: 1px solid #000;
+    border: 0.5px solid #EBE9E9;
     width: 60%; }
     @media only screen and (max-width: 37.5em) {
       .section-contact__form--input, .section-contact__form--textarea {
         width: 100%; } }
     .section-contact__form--input:focus, .section-contact__form--input:hover, .section-contact__form--textarea:focus, .section-contact__form--textarea:hover {
       transform: scale(1.1);
-      background-color: rgba(0, 0, 0, 0.5); }
+      background-color: rgba(25, 25, 25, 0.2); }
   .section-contact__form--label {
     display: inline-block; }
   .section-contact__form--input:focus {
