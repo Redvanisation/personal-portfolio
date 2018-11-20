@@ -191,6 +191,10 @@
         padding: 20rem 10rem 45rem 10rem;
     }
     
+    @include respond(phone) {
+        padding: 20rem 10rem 30rem 10rem;
+    }
+    
 }
 
 .section-contact {
