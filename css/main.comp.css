@@ -769,7 +769,7 @@ body {
         transform: translate(-50%, -50%);
         width: 120%;
         text-align: center;
-        font-size: 1.5rem; } }
+        font-size: 2rem; } }
     @media only screen and (max-width: 26.5625em) {
       .section-about__text {
         top: 100%;
@@ -777,7 +777,7 @@ body {
         transform: translate(-50%, -50%);
         width: 120%;
         text-align: center;
-        font-size: .5rem; } }
+        font-size: 2rem; } }
   .section-about--h3 {
     display: inline-block;
     font-size: 5rem;
