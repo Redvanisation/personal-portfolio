@@ -143,31 +143,28 @@
             opacity: 1;
 
             @include respond(phone) {
-                // transform: translate(-50%, );
                 font-size: 1.5rem;
                 
             }
 
             @include respond(phone-sml) {
                 font-size: 1rem;
-                // transform: translate(-50%, 50%);
                 padding: 3rem .5rem;
             }
         }
     
-        &:hover {
-            transform: scale(1.08) translateY(-2rem);
-        }
+        // &:hover {
+        //     // transform: scale(1.08) translateY(-2rem);
+        // }
     
         &:hover &__description {
-            transform: translate(-50%, 80%) scale(1.1);
+            transform: translate(-50%, 3%) scale(1.1);
         }
     
-        &:hover &__img {
-            transform: translateX(-4rem) scale(1.5);
-            filter: blur(0) brightness(75%);
+        // &:hover &__img {
+        //     // filter: blur(0) brightness(20%);
     
-        }
+        // }
     
     }
 }
