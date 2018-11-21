@@ -538,13 +538,8 @@ body {
         font-size: 1rem;
         padding: 3rem .5rem; } }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-      .card:hover {
-        transform: scale(1.08) translateY(-2rem); }
       .card:hover .card__description {
-        transform: translate(-50%, 80%) scale(1.1); }
-      .card:hover .card__img {
-        transform: translateX(-4rem) scale(1.5);
-        filter: blur(0) brightness(75%); } }
+        transform: translate(-50%, 3%) scale(1.1); } }
 
 .footer {
   height: 100%;
