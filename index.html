@@ -30,19 +30,19 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a href="#section-about" class="navigation__link"><span>01</span>About</a>
+                    <a href="#section-about" class="navigation__link">About</a>
                 </li>
                 <li class="navigation__item">                    
-                    <a href="#section-projects" class="navigation__link"><span>02</span>Projects</a>
+                    <a href="#section-projects" class="navigation__link">Projects</a>
                 </li>
                 <li class="navigation__item">
-                        <a href="#section-skills" class="navigation__link"><span>03</span>Stack</a>
+                        <a href="#section-skills" class="navigation__link">Stack</a>
                 </li>
                 <li class="navigation__item">
-                        <a href="#section-contact" class="navigation__link"><span>04</span>Contact</a>
+                        <a href="#section-contact" class="navigation__link">Contact</a>
                 </li>
                 <li class="navigation__item">
-                        <a href="#" class="navigation__link"><span>05</span>CV</a>
+                        <a href="#" class="navigation__link">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -67,10 +67,13 @@
             sizes="(max-width: 900px) 28vw, (max-width: 600px) 25vw, 300px" src="img/html-imgs/redvan-2x.jpg" alt="Picture of Redvan" class="section-about__picture--img">
 
             <h3 class="section-about--h3">Redvan</h3>
-            <p class="section-about__text col-1-of-2">
-                I'm a very passionate web developer with many years of experience and much love for flat and responsive web design!
-                I'm based in New York City
-            </p>
+            <div class="section-about__text col-1-of-2">
+                <p>I'm a very passionate freelance web developer with more than 6 years of experience, specializing in small to medium sized business websites and content management systems. </p>
+                <p>I design and develop responsive websites using the most current technologies to provide the best user experience while satisfying customer needs. </p>
+                <p>My previous employment and management experience provides me with leadership skills that allow me to effectively communicate with others to achieve our goals. </p> 
+                <p>In addition, it has provided me the knowledge of understanding and communicating with customers to satisfy their needs. I am a fast learner who enjoys challenges and thrives in a fast paced, goal oriented environment.</p>  <br>
+                <a href="cv.html" target="_blank" class="btn btn-white btn__about">CV &rarr;</a>
+            </div>
         </div>
     </section>
 
@@ -160,7 +163,10 @@
         </h2>
         <div class="row">
             <div class="section-skills__text">
-                I am very passionate about learning new technologies and gaining new skills, so far I have good to excellent skills in all the below technologies and I am still learning! :)
+
+                I am a fast learner who enjoys challenges and thrives in a fast paced, goal oriented environment. Currently have experience working with and have good to excellent skills in all the technologies and tools mentioned in this section:
+
+                <!-- I am very passionate about learning new technologies and gaining new skills, so far I have good to excellent skills in all the below technologies and I am still learning! :) -->
             </div>
         </div>
         <div class="row">
@@ -199,13 +205,13 @@
                     <i class="devicon-express-original-wordmark"title="EXPRESS JS"></i>
                     <i class="devicon-python-plain-wordmark" title="PYTHON"></i>
                     <i class="devicon-postgresql-plain-wordmark" title="POSTGRESQL"></i>
-                    <!-- <i class="devicon-mysql-plain-wordmark" title="MY SQL"></i>
-                    <i class="devicon-php-plain" title="PHP"></i> -->
+                    <!-- <i class="devicon-mysql-plain-wordmark" title="MY SQL"></i> -->
+                    <i class="devicon-php-plain" title="PHP"></i>
                 </div>
             </div>
             <div class="col-1-of-2">
                 <h3 class="heading-tertiary heading-tertiary__black margin-bottom-medium">
-                    Source Control
+                    VCS and Tools
                 </h3>
                 <div class="section-skills__icons">
                     <i class="devicon-git-plain-wordmark" title="GIT"></i>
@@ -260,8 +266,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/smooth-scroll.polyfills.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/dist/index.js"></script>
     <script>
         	var scroll = new SmoothScroll('a[href*="#"]');
     </script>

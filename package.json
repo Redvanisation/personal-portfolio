@@ -4,6 +4,8 @@
   "description": "I'm Redvan and this is my personal portfolio v2018",
   "main": "index.js",
   "scripts": {
+    "build:js": "babel js/src -d js/dist",
+    "build:js": "babel --presets es2015 js/src -d js/dist",
     "watch:sass": "node-sass sass/main.scss css/main.comp.css -w"
   },
   "keywords": [
@@ -21,6 +23,8 @@
   "author": "Redvanisation",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "node-sass": "^4.9.4"
   }
 }
