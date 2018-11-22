@@ -49,6 +49,14 @@
                 transform: translateX(-50%) scale(1.4) rotate(5deg);
             }
         }
+
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+
+        @include respond(phone-sml) {
+            font-size: 3.5rem;
+        }
     }
 
     &__picture {

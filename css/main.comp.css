@@ -717,6 +717,12 @@ body {
         transform: translateX(-50%); }
         .section-about__h3:hover {
           transform: translateX(-50%) scale(1.4) rotate(5deg); } }
+    @media only screen and (max-width: 37.5em) {
+      .section-about__h3 {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 26.5625em) {
+      .section-about__h3 {
+        font-size: 3.5rem; } }
   .section-about__picture {
     border-radius: 2rem;
     display: inline-block;
