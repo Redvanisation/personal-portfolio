@@ -1,143 +1,24 @@
 .section-about {
     background-image: linear-gradient(to right bottom, rgba($color-primary, 1), rgba($color-primary-dark, 1));
     margin-top: -15vh;
-    padding: 10rem 10rem 30rem 10rem;
+    padding: 10rem 10rem 20rem 10rem;
     color: $color-grey-light;
     text-align: center;
     transform: skewY(5.5deg);
-    height: auto;
-
-    @include respond(tab-land) {
-        padding: 20rem 10rem 70rem 10rem;
-    }
-
-    @include respond(phablet) {
-        padding: 8rem 10rem 45rem 10rem;
-        // height: 100%;
-    }
-
-    @include respond(phone) {
-        padding: 8rem 10rem 35rem 10rem;
-    }
-
-    
-
-    @include respond(phone-sml) {
-        padding-top: 5rem;
-        padding-bottom: 20rem;
-    }
-
-    @include respond(phone-vs) {
-        padding-bottom: 30rem;
-    }
-
-    @include respond(phone-vvs) {
-        height: 120vh;
-    }
-
 
 
     &__container {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-    }
+        width: 100%;
 
-    &__picture {
-        display: block;
+        @include clearfix;
 
-        &--img {
-            background-color: $color-primary-light;
-            border-radius: 2rem;
-            display: inline-block;
-            width: 25rem;
-            height: 25rem;
-            @include boxShadowWt;
-            transition: transform .2s;
-            position: absolute;
-            top: 0;
-            left: 13rem;
-
-            &:hover {
-                transform: scale(1.2);
-
-                @include respond(phone) {
-                    transform: translate(-50%, -50%) scale(1.2);
-                }
-                @include respond(phone-sml) {
-                    transform: translate(-50%, -50%) scale(1.2);
-                }
-            }
-
-            @include respond(phablet) {
-                width: 15rem;
-                height: 15rem;
-                left: 0;
-                top: -2rem;
-            }
-
-            @include respond(phone) {
-                left: 50%;
-                top: 20%;
-                transform: translate(-50%, -50%);
-                // width: 12rem;
-                // height: 12rem;
-            }
-
-            @include respond(phone-sml) {
-                left: 50%;
-                top: 20%;
-                transform: translate(-50%, -50%);
-                width: 10rem;
-                height: 10rem;
-            }
-        }
-
-        
-    }
-
-    &__text {
-        display: inline-block;
-        position: absolute;
-        top: 4rem;
-        left: 42rem;
-        text-align: left;
-        font-size: $global-font-size;
-        letter-spacing: .2rem;
-        height: 100%;
-
-        
-        @include respond(tab-port) {
-            left: 40rem;
-        }
-        
-        @include respond(phablet) {
-            position: absolute;
-            top: 0;
-            left: 18rem;
-            font-size: 1.8rem;
-        }
-
-        @include respond(phone) {
-            top: 120%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 120%;
-            text-align: center;
-            font-size: 2rem;
-            // margin-top: .5rem;
-        }
-
-        @include respond(phone-sml) {
-            top: 100%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 120%;
-            text-align: center;
-            font-size: 2rem;
+        @include respond(biggest-desk) {
+            width: 80%;
+            margin: 0 auto;
         }
     }
 
-    &--h3 {
+    &__h3 {
         display: inline-block;
         font-size: 5rem;
         position: absolute;
@@ -149,44 +30,275 @@
         background-color: rgba($color-grey, .5);
         padding: .2rem 1.5rem;
         border-radius: 3px;
+        z-index: 100;
 
         &:hover {
             transform: scale(1.4) rotate(5deg);
+        }
 
-            @include respond(phone) {
-                transform: translate(-50%, -50%) scale(1.5) rotate(5deg);
-            }
+        @include respond(biggish-desk) {
+            left: 43rem;
+        }
 
-            @include respond(phone-sml) {
-                transform: translate(-50%, -50%) scale(1.5) rotate(5deg);
+        @include respond(tab-land) {
+            top: -8rem;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:hover {
+                transform: translateX(-50%) scale(1.4) rotate(5deg);
             }
         }
-        
+    }
+
+    &__picture {
+        border-radius: 2rem;
+        display: inline-block;
+        width: 28rem;
+        @include boxShadowWt;
+        transition: transform .2s;
+        margin-left: 10rem;
+        float: left;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        @include respond(biggish-desk) {
+            margin-left: 20rem;
+        }
+
+        @include respond(tab-land) {
+            float: none;
+            display: block;
+            margin: 2rem auto;
+            width: 25rem;
+        }
+
         @include respond(tab-port) {
-            left: 35rem;
-        }
-
-        @include respond(phablet) {
-            top: -5rem;
-            left: 12rem;
-            font-size: 4rem;
+            width: 20rem;
         }
 
         @include respond(phone) {
-            top: -30%;
-            left:50%;
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
-
+            width: 18rem;
         }
 
         @include respond(phone-sml) {
-            top: -20%;
-            left:50%;
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
+            width: 15rem;
         }
     }
+
+    &__text {
+        font-size: $global-font-size;
+        letter-spacing: .2rem;
+        line-height: 1.2;
+        text-align: left;
+        float: right;
+        display: inline-block;
+        width: 60%;
+        margin-top: 4rem;
+
+        @include respond(tab-land) {
+            float: none;
+            display: block;
+            text-align: center;
+            width: 80%;
+            margin: 3rem auto;
+
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+    }
+
+
+
+
+
+    // height: auto !important;
+
+    // @include respond(tab-land) {
+    //     padding: 20rem 10rem 70rem 10rem;
+    // }
+
+    // @include respond(phablet) {
+    //     padding: 8rem 10rem 45rem 10rem;
+    //     // height: 100%;
+    // }
+
+    // @include respond(phone) {
+    //     padding: 8rem 10rem 35rem 10rem;
+    // }
+
+    
+
+    // @include respond(phone-sml) {
+    //     padding-top: 5rem;
+    //     padding-bottom: 20rem;
+    // }
+
+    // @include respond(phone-vs) {
+    //     padding-bottom: 30rem;
+    // }
+
+    // @include respond(phone-vvs) {
+    //     height: 120vh;
+    // }
+
+
+
+    // &__container {
+    //     padding-top: 10rem;
+    //     padding-bottom: 10rem;
+    // }
+
+    // &__picture {
+    //     display: block;
+
+    //     &--img {
+    //         background-color: $color-primary-light;
+    //         border-radius: 2rem;
+    //         display: inline-block;
+    //         width: 25rem;
+    //         height: 25rem;
+    //         @include boxShadowWt;
+    //         transition: transform .2s;
+    //         position: absolute;
+    //         top: 0;
+    //         left: 13rem;
+
+    //         &:hover {
+    //             transform: scale(1.2);
+
+    //             @include respond(phone) {
+    //                 transform: translate(-50%, -50%) scale(1.2);
+    //             }
+    //             @include respond(phone-sml) {
+    //                 transform: translate(-50%, -50%) scale(1.2);
+    //             }
+    //         }
+
+    //         @include respond(phablet) {
+    //             width: 15rem;
+    //             height: 15rem;
+    //             left: 0;
+    //             top: -2rem;
+    //         }
+
+    //         @include respond(phone) {
+    //             left: 50%;
+    //             top: 20%;
+    //             transform: translate(-50%, -50%);
+    //             // width: 12rem;
+    //             // height: 12rem;
+    //         }
+
+    //         @include respond(phone-sml) {
+    //             left: 50%;
+    //             top: 20%;
+    //             transform: translate(-50%, -50%);
+    //             width: 10rem;
+    //             height: 10rem;
+    //         }
+    //     }
+
+        
+    // }
+
+    // &__text {
+    //     display: inline-block;
+    //     position: absolute;
+    //     top: 4rem;
+    //     left: 42rem;
+    //     text-align: left;
+    //     font-size: $global-font-size;
+    //     letter-spacing: .2rem;
+    //     height: 100%;
+
+        
+    //     @include respond(tab-port) {
+    //         left: 40rem;
+    //     }
+        
+    //     @include respond(phablet) {
+    //         position: absolute;
+    //         top: 0;
+    //         left: 18rem;
+    //         // font-size: 1.8rem;
+    //     }
+
+    //     @include respond(phone) {
+    //         top: 120%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         width: 120%;
+    //         text-align: center;
+    //         // font-size: 2rem;
+    //         // margin-top: .5rem;
+    //     }
+
+    //     @include respond(phone-sml) {
+    //         top: 100%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         width: 120%;
+    //         text-align: center;
+    //         // font-size: 2rem;
+    //     }
+    // }
+
+    // &--h3 {
+    //     display: inline-block;
+    //     font-size: 5rem;
+    //     position: absolute;
+    //     top: -3rem;
+    //     left: 33rem;
+    //     transition: transform .2s;
+    //     color: $color-grey-light;
+    //     @include txtShadowBlk;
+    //     background-color: rgba($color-grey, .5);
+    //     padding: .2rem 1.5rem;
+    //     border-radius: 3px;
+
+    //     &:hover {
+    //         transform: scale(1.4) rotate(5deg);
+
+    //         @include respond(phone) {
+    //             transform: translate(-50%, -50%) scale(1.5) rotate(5deg);
+    //         }
+
+    //         @include respond(phone-sml) {
+    //             transform: translate(-50%, -50%) scale(1.5) rotate(5deg);
+    //         }
+    //     }
+        
+    //     @include respond(tab-port) {
+    //         left: 35rem;
+    //     }
+
+    //     @include respond(phablet) {
+    //         top: -5rem;
+    //         left: 12rem;
+    //         font-size: 4rem;
+    //     }
+
+    //     @include respond(phone) {
+    //         top: -30%;
+    //         left:50%;
+    //         transform: translate(-50%, -50%);
+    //         font-size: 3rem;
+
+    //     }
+
+    //     @include respond(phone-sml) {
+    //         top: -20%;
+    //         left:50%;
+    //         transform: translate(-50%, -50%);
+    //         font-size: 3rem;
+    //     }
+    // }
 
     & > * {
         transform: skewY(-5.5deg);

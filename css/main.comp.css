@@ -678,107 +678,21 @@ body {
 .section-about {
   background-image: linear-gradient(to right bottom, #191919, #030202);
   margin-top: -15vh;
-  padding: 10rem 10rem 30rem 10rem;
+  padding: 10rem 10rem 20rem 10rem;
   color: #EBE9E9;
   text-align: center;
-  transform: skewY(5.5deg);
-  height: auto; }
-  @media only screen and (max-width: 75em) {
-    .section-about {
-      padding: 20rem 10rem 70rem 10rem; } }
-  @media only screen and (max-width: 46.875em) {
-    .section-about {
-      padding: 8rem 10rem 45rem 10rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .section-about {
-      padding: 8rem 10rem 35rem 10rem; } }
-  @media only screen and (max-width: 26.5625em) {
-    .section-about {
-      padding-top: 5rem;
-      padding-bottom: 20rem; } }
-  @media only screen and (max-width: 25.5em) {
-    .section-about {
-      padding-bottom: 30rem; } }
-  @media only screen and (max-width: 21.875em) {
-    .section-about {
-      height: 120vh; } }
+  transform: skewY(5.5deg); }
   .section-about__container {
-    padding-top: 10rem;
-    padding-bottom: 10rem; }
-  .section-about__picture {
-    display: block; }
-    .section-about__picture--img {
-      background-color: #575757;
-      border-radius: 2rem;
-      display: inline-block;
-      width: 25rem;
-      height: 25rem;
-      box-shadow: 0 0.3rem 2rem rgba(255, 255, 255, 0.5);
-      transition: transform .2s;
-      position: absolute;
-      top: 0;
-      left: 13rem; }
-      .section-about__picture--img:hover {
-        transform: scale(1.2); }
-        @media only screen and (max-width: 37.5em) {
-          .section-about__picture--img:hover {
-            transform: translate(-50%, -50%) scale(1.2); } }
-        @media only screen and (max-width: 26.5625em) {
-          .section-about__picture--img:hover {
-            transform: translate(-50%, -50%) scale(1.2); } }
-      @media only screen and (max-width: 46.875em) {
-        .section-about__picture--img {
-          width: 15rem;
-          height: 15rem;
-          left: 0;
-          top: -2rem; } }
-      @media only screen and (max-width: 37.5em) {
-        .section-about__picture--img {
-          left: 50%;
-          top: 20%;
-          transform: translate(-50%, -50%); } }
-      @media only screen and (max-width: 26.5625em) {
-        .section-about__picture--img {
-          left: 50%;
-          top: 20%;
-          transform: translate(-50%, -50%);
-          width: 10rem;
-          height: 10rem; } }
-  .section-about__text {
-    display: inline-block;
-    position: absolute;
-    top: 4rem;
-    left: 42rem;
-    text-align: left;
-    font-size: 1.7rem;
-    letter-spacing: .2rem;
-    height: 100%; }
-    @media only screen and (max-width: 56.25em) {
-      .section-about__text {
-        left: 40rem; } }
-    @media only screen and (max-width: 46.875em) {
-      .section-about__text {
-        position: absolute;
-        top: 0;
-        left: 18rem;
-        font-size: 1.8rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .section-about__text {
-        top: 120%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 120%;
-        text-align: center;
-        font-size: 2rem; } }
-    @media only screen and (max-width: 26.5625em) {
-      .section-about__text {
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 120%;
-        text-align: center;
-        font-size: 2rem; } }
-  .section-about--h3 {
+    width: 100%; }
+    .section-about__container::after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media only screen and (min-width: 130em) {
+      .section-about__container {
+        width: 80%;
+        margin: 0 auto; } }
+  .section-about__h3 {
     display: inline-block;
     font-size: 5rem;
     position: absolute;
@@ -789,35 +703,67 @@ body {
     text-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4);
     background-color: rgba(141, 139, 139, 0.5);
     padding: .2rem 1.5rem;
-    border-radius: 3px; }
-    .section-about--h3:hover {
+    border-radius: 3px;
+    z-index: 100; }
+    .section-about__h3:hover {
       transform: scale(1.4) rotate(5deg); }
-      @media only screen and (max-width: 37.5em) {
-        .section-about--h3:hover {
-          transform: translate(-50%, -50%) scale(1.5) rotate(5deg); } }
-      @media only screen and (max-width: 26.5625em) {
-        .section-about--h3:hover {
-          transform: translate(-50%, -50%) scale(1.5) rotate(5deg); } }
+    @media only screen and (min-width: 100em) {
+      .section-about__h3 {
+        left: 43rem; } }
+    @media only screen and (max-width: 75em) {
+      .section-about__h3 {
+        top: -8rem;
+        left: 50%;
+        transform: translateX(-50%); }
+        .section-about__h3:hover {
+          transform: translateX(-50%) scale(1.4) rotate(5deg); } }
+  .section-about__picture {
+    border-radius: 2rem;
+    display: inline-block;
+    width: 28rem;
+    box-shadow: 0 0.3rem 2rem rgba(255, 255, 255, 0.5);
+    transition: transform .2s;
+    margin-left: 10rem;
+    float: left; }
+    .section-about__picture:hover {
+      transform: scale(1.2); }
+    @media only screen and (min-width: 100em) {
+      .section-about__picture {
+        margin-left: 20rem; } }
+    @media only screen and (max-width: 75em) {
+      .section-about__picture {
+        float: none;
+        display: block;
+        margin: 2rem auto;
+        width: 25rem; } }
     @media only screen and (max-width: 56.25em) {
-      .section-about--h3 {
-        left: 35rem; } }
-    @media only screen and (max-width: 46.875em) {
-      .section-about--h3 {
-        top: -5rem;
-        left: 12rem;
-        font-size: 4rem; } }
+      .section-about__picture {
+        width: 20rem; } }
     @media only screen and (max-width: 37.5em) {
-      .section-about--h3 {
-        top: -30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3rem; } }
+      .section-about__picture {
+        width: 18rem; } }
     @media only screen and (max-width: 26.5625em) {
-      .section-about--h3 {
-        top: -20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3rem; } }
+      .section-about__picture {
+        width: 15rem; } }
+  .section-about__text {
+    font-size: 1.7rem;
+    letter-spacing: .2rem;
+    line-height: 1.2;
+    text-align: left;
+    float: right;
+    display: inline-block;
+    width: 60%;
+    margin-top: 4rem; }
+    @media only screen and (max-width: 75em) {
+      .section-about__text {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin: 3rem auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .section-about__text {
+        width: 100%; } }
   .section-about > * {
     transform: skewY(-5.5deg); }
 
