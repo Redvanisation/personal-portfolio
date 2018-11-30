@@ -6,6 +6,10 @@
     text-align: center;
     transform: skewY(5.5deg);
 
+    @include respond(tab-land) {
+        padding: 10rem 5rem;
+    }
+
 
     &__container {
         width: 100%;
@@ -33,7 +37,7 @@
         z-index: 100;
 
         &:hover {
-            transform: scale(1.4) rotate(5deg);
+            transform: scale(1.2) rotate(5deg);
         }
 
         @include respond(biggish-desk) {
@@ -41,7 +45,7 @@
         }
 
         @include respond(tab-land) {
-            top: -8rem;
+            top: -11rem;
             left: 50%;
             transform: translateX(-50%);
 
@@ -51,6 +55,7 @@
         }
 
         @include respond(phone) {
+            top: -8.5rem;
             font-size: 4rem;
         }
 
@@ -60,26 +65,33 @@
     }
 
     &__picture {
-        border-radius: 2rem;
+        border-radius: 3px;
         display: inline-block;
-        width: 28rem;
-        @include boxShadowWt;
-        transition: transform .2s;
-        margin-left: 10rem;
+        width: 25rem;
+        // @include boxShadowWt;
+        transition: all .3s;
+        margin-left: 12rem;
+        margin-top: 2rem;
         float: left;
+        outline: .5rem solid $color-primary-light;
+        outline-offset: .5rem;
+        // -moz-outline-radius: 1rem;
 
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.05) translateY(-1rem);
+            outline: 1rem solid $color-primary-light;
+            outline-offset: 1.5rem;
+    
         }
 
         @include respond(biggish-desk) {
-            margin-left: 20rem;
+            margin-left: 22rem;
         }
 
         @include respond(tab-land) {
             float: none;
             display: block;
-            margin: 2rem auto;
+            margin: 6rem auto 5rem auto;
             width: 25rem;
         }
 
@@ -89,6 +101,8 @@
 
         @include respond(phone) {
             width: 18rem;
+            margin: 3rem auto 5rem auto;
+
         }
 
         @include respond(phone-sml) {
@@ -104,12 +118,20 @@
         float: right;
         display: inline-block;
         width: 60%;
-        margin-top: 4rem;
+        margin-top: 5rem;
+
+        & p {
+            &:not(:last-child) {
+                margin-bottom: 1rem; 
+
+            }
+        }
 
         @include respond(tab-land) {
             float: none;
             display: block;
-            text-align: center;
+            text-align: left;
+            line-height: 1.5;
             width: 80%;
             margin: 3rem auto;
 
@@ -121,192 +143,6 @@
 
     }
 
-
-
-
-
-    // height: auto !important;
-
-    // @include respond(tab-land) {
-    //     padding: 20rem 10rem 70rem 10rem;
-    // }
-
-    // @include respond(phablet) {
-    //     padding: 8rem 10rem 45rem 10rem;
-    //     // height: 100%;
-    // }
-
-    // @include respond(phone) {
-    //     padding: 8rem 10rem 35rem 10rem;
-    // }
-
-    
-
-    // @include respond(phone-sml) {
-    //     padding-top: 5rem;
-    //     padding-bottom: 20rem;
-    // }
-
-    // @include respond(phone-vs) {
-    //     padding-bottom: 30rem;
-    // }
-
-    // @include respond(phone-vvs) {
-    //     height: 120vh;
-    // }
-
-
-
-    // &__container {
-    //     padding-top: 10rem;
-    //     padding-bottom: 10rem;
-    // }
-
-    // &__picture {
-    //     display: block;
-
-    //     &--img {
-    //         background-color: $color-primary-light;
-    //         border-radius: 2rem;
-    //         display: inline-block;
-    //         width: 25rem;
-    //         height: 25rem;
-    //         @include boxShadowWt;
-    //         transition: transform .2s;
-    //         position: absolute;
-    //         top: 0;
-    //         left: 13rem;
-
-    //         &:hover {
-    //             transform: scale(1.2);
-
-    //             @include respond(phone) {
-    //                 transform: translate(-50%, -50%) scale(1.2);
-    //             }
-    //             @include respond(phone-sml) {
-    //                 transform: translate(-50%, -50%) scale(1.2);
-    //             }
-    //         }
-
-    //         @include respond(phablet) {
-    //             width: 15rem;
-    //             height: 15rem;
-    //             left: 0;
-    //             top: -2rem;
-    //         }
-
-    //         @include respond(phone) {
-    //             left: 50%;
-    //             top: 20%;
-    //             transform: translate(-50%, -50%);
-    //             // width: 12rem;
-    //             // height: 12rem;
-    //         }
-
-    //         @include respond(phone-sml) {
-    //             left: 50%;
-    //             top: 20%;
-    //             transform: translate(-50%, -50%);
-    //             width: 10rem;
-    //             height: 10rem;
-    //         }
-    //     }
-
-        
-    // }
-
-    // &__text {
-    //     display: inline-block;
-    //     position: absolute;
-    //     top: 4rem;
-    //     left: 42rem;
-    //     text-align: left;
-    //     font-size: $global-font-size;
-    //     letter-spacing: .2rem;
-    //     height: 100%;
-
-        
-    //     @include respond(tab-port) {
-    //         left: 40rem;
-    //     }
-        
-    //     @include respond(phablet) {
-    //         position: absolute;
-    //         top: 0;
-    //         left: 18rem;
-    //         // font-size: 1.8rem;
-    //     }
-
-    //     @include respond(phone) {
-    //         top: 120%;
-    //         left: 50%;
-    //         transform: translate(-50%, -50%);
-    //         width: 120%;
-    //         text-align: center;
-    //         // font-size: 2rem;
-    //         // margin-top: .5rem;
-    //     }
-
-    //     @include respond(phone-sml) {
-    //         top: 100%;
-    //         left: 50%;
-    //         transform: translate(-50%, -50%);
-    //         width: 120%;
-    //         text-align: center;
-    //         // font-size: 2rem;
-    //     }
-    // }
-
-    // &--h3 {
-    //     display: inline-block;
-    //     font-size: 5rem;
-    //     position: absolute;
-    //     top: -3rem;
-    //     left: 33rem;
-    //     transition: transform .2s;
-    //     color: $color-grey-light;
-    //     @include txtShadowBlk;
-    //     background-color: rgba($color-grey, .5);
-    //     padding: .2rem 1.5rem;
-    //     border-radius: 3px;
-
-    //     &:hover {
-    //         transform: scale(1.4) rotate(5deg);
-
-    //         @include respond(phone) {
-    //             transform: translate(-50%, -50%) scale(1.5) rotate(5deg);
-    //         }
-
-    //         @include respond(phone-sml) {
-    //             transform: translate(-50%, -50%) scale(1.5) rotate(5deg);
-    //         }
-    //     }
-        
-    //     @include respond(tab-port) {
-    //         left: 35rem;
-    //     }
-
-    //     @include respond(phablet) {
-    //         top: -5rem;
-    //         left: 12rem;
-    //         font-size: 4rem;
-    //     }
-
-    //     @include respond(phone) {
-    //         top: -30%;
-    //         left:50%;
-    //         transform: translate(-50%, -50%);
-    //         font-size: 3rem;
-
-    //     }
-
-    //     @include respond(phone-sml) {
-    //         top: -20%;
-    //         left:50%;
-    //         transform: translate(-50%, -50%);
-    //         font-size: 3rem;
-    //     }
-    // }
 
     & > * {
         transform: skewY(-5.5deg);
@@ -321,6 +157,10 @@
     // background-color: $color-primary-light;
     color: $color-white;
     position: relative;
+
+    // @include respond(tab-land) {
+    //     padding: 10rem 5rem;
+    // }
 
 
     & > * {
@@ -340,6 +180,7 @@
     // color: $color-grey-light;
 
     margin-top: -10vh;
+
     
 
     &__text {
@@ -432,6 +273,11 @@
         
         &--label {
             display: inline-block;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            line-height: 1.7;
+            letter-spacing: 1rem;
+            @include txtShadowWt;
         }
 
         &--input {

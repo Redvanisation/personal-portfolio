@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Redvan K Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="css/fontello-codes.css">
@@ -42,7 +42,7 @@
                         <a href="#section-contact" class="navigation__link">Contact</a>
                 </li>
                 <li class="navigation__item">
-                        <a href="#" class="navigation__link">Resume</a>
+                        <a href="#" class="navigation__link">Home</a>
                 </li>
             </ul>
         </nav>
@@ -55,7 +55,7 @@
                 <span class="heading-primary--text">a creative and passionate web developer based in <span class="heading-primary--highlight"> New York city</span></span>
             </h1>
         </div>
-        <a href="#section-about" class="btn btn-white btn-header">Find out more <span class="btn__arrow"> &darr;</span></a>
+        <a href="#section-about" class="btn btn-white btn-header">Find out more &darr;</a>
     </header>
     <section class="section section-about">
         <h2 class="heading-secondary margin-bottom-big" data-scroll id="section-about">
@@ -72,7 +72,7 @@
                 <p>I design and develop responsive websites using the most current technologies to provide the best user experience while satisfying customer needs. </p>
                 <p>My previous employment and management experience provides me with leadership skills that allow me to effectively communicate with others to achieve our goals. </p> 
                 <p>In addition, it has provided me the knowledge of understanding and communicating with customers to satisfy their needs. I am a fast learner who enjoys challenges and thrives in a fast paced, goal oriented environment.</p>  <br>
-                <a href="cv.html" target="_blank" class="btn btn-white btn__about">CV &rarr;</a>
+                <!-- <a href="cv.html" target="_blank" class="btn btn-white btn__about">CV &rarr;</a> -->
             </div>
         </div>
     </section>
@@ -154,7 +154,7 @@
                     </figure>
                 </div>
         </div>
-        <a href="projects.html" class="btn btn-white btn-projects">More Projects <span class="btn__arrow--white">&rAarr;</span> </a>
+        <a href="projects.html" class="btn btn-white btn-projects">More Projects &rAarr; </a>
     </section>
 
     <section class="section section-skills">
@@ -234,13 +234,13 @@
         </h2>
         <form action="https://formspree.io/redvanisation@gmail.com" method="POST" class="section-contact__form">
 
-            <label for="fullname" class="section-contact__form--label heading-tertiary heading-tertiary__white margin-bottom-small">Name</label>
-            <input type="text" class="section-contact__form--input" name="fullname" required>
+            <label for="fullname" class="section-contact__form--label  heading-tertiary__white margin-bottom-small">Name</label>
+            <input type="text" name="fullname" class="section-contact__form--input" required>
 
-            <label for="email" class="section-contact__form--label heading-tertiary heading-tertiary__white margin-bottom-small">Email</label>
+            <label for="email" class="section-contact__form--label heading-tertiary__white margin-bottom-small">Email</label>
             <input type="email" class="section-contact__form--input" name="email" size="100" required>
             
-            <label for="message" class="section-contact__form--label heading-tertiary heading-tertiary__white margin-bottom-small">Message</label>
+            <label class="section-contact__form--label heading-tertiary__white margin-bottom-small">Message</label>
             <textarea name="message" class="section-contact__form--textarea" id="message" cols="30" rows="10" required></textarea>
             
             <input type="submit" class="btn btn-white btn--submit" Value="  Send   &rAarr;">
@@ -261,7 +261,7 @@
             <div class="col-1-of-2">
                 <div class="footer__text">
                     <span class="footer__copyrights"> &copy; Copyrights <a href="https://github.com/Redvanisation" target="_blank" class="footer__link">Redvanisation</a> 2018</span> 
-                    This website was purely designed and developed from scratch by me, using web the latest of web technologies: <span class="footer__technologies"> HTML5, CSS3, SASS, and ES6 JavaScript</span>
+                    This website was purely designed and developed from scratch by me, using the latest of web technologies: <span class="footer__technologies"> HTML5, CSS3, SASS, and ES6 JavaScript</span>
                 </div>
             </div>
         </div>
@@ -269,7 +269,9 @@
     <script src="js/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="js/dist/index.js"></script>
     <script>
-        	var scroll = new SmoothScroll('a[href*="#"]');
+        	var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 700
+            });
     </script>
 </body>
 </html>

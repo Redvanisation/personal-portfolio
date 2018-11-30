@@ -6,7 +6,7 @@
     padding: 2rem 3rem;
     @include boxShadowBlk;
     position: relative;
-    transition: all .3s;
+    transition: all .5s;
     outline: .5rem solid $color-primary-light;
     outline-offset: .5rem;
 
@@ -36,7 +36,7 @@
         letter-spacing: .2rem;
         backface-visibility: hidden;
         opacity: 1;
-        transition: all .5s;
+        transition: all .5s ease-in-out;
         height: 100%;
     }
 

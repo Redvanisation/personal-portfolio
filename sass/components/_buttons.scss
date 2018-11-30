@@ -4,25 +4,29 @@
     &:visited {
         display: inline-block;
         text-transform: uppercase;
-        padding: 2rem 6.5rem 2rem 5rem;
-        border-radius: 300rem;
+        // padding: 2rem 6.5rem 2rem 5rem;
+        padding: 2rem 3rem;
+        border-radius: .5rem;
         text-decoration: none;
         font-size: 1.5rem;
         font-weight: 900;
         outline: none;
-        transition: all .2s;
-        @include boxShadowWt;
+        transition: all .3s;
+        // @include boxShadowWt;
 
         @include respond(phone) {
             font-size: 1rem;
-            padding: 1rem 3rem;
+            // padding: 1rem 3rem;
+            
             margin-top: 2rem;
         }
 
     }
 
     &:hover {
-        transform: translate(-50%, -.5rem);
+        transform: rotate(5deg) translate(-50%, 2rem);         
+        // transform: skew(-5.5deg) translate(0, 1rem);
+
         box-shadow: 0 .6rem 2.5rem rgba($color-white, .5);
 
     }
@@ -34,11 +38,6 @@
 
     &__arrow {
         display: inline-block;
-        font-size: 1.8rem;
-        position: absolute;
-        top: 2.2rem;
-        left: 17rem;
-        margin-left: 1rem;
 
         &--white {
             top: 1.5rem;
@@ -50,11 +49,6 @@
             }
         }
 
-        @include respond(phone) {
-            top: 1.23rem;
-            left: 10.3rem;
-            font-size: 1.5rem;
-        }
     }
 
     &--submit {
@@ -87,7 +81,7 @@
         }
 
         &:hover {
-            transform: translate(0, -.5rem);
+            transform: rotate(6deg) translate(0, 1rem);         
         }
         
         &:active {
@@ -98,8 +92,15 @@
 }
 
 .btn-white {
-    background-color: $color-grey-light;
-    color: $color-black;
+    background-color: transparent;
+    color: $color-grey-light;
+    border: 2px solid $color-grey-light;
+
+    &:hover {
+        // background-color: $color-grey-light;
+        // color: $color-primary;
+
+    }
 
 }
 
@@ -135,5 +136,19 @@
 
     &:active {
         transform: skew(-5.5deg) translate(0, 1.5rem);
+    }
+}
+
+.btn-projects-page {
+
+    @include absCenter;
+    transform: translate(-50%, 200%);
+
+    &:hover {
+        transform: rotate(-5.5deg) translate(-50%, 200%);
+    }
+
+    &:active {
+        transform: rotate(-5.5deg) translate(-50%, 200%);
     }
 }

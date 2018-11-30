@@ -1,0 +1,82 @@
+.resume {
+    // width: 100%;
+    
+    &__menu {
+        float: left;
+        background-color:$color-primary;
+        // padding: 5rem;
+        width: 15vw;
+        height: 100vh;
+        position:fixed;
+        // text-align: center;
+    }
+    
+    &__nav {
+        &--ul {
+            list-style: none;
+            text-align: center;
+            padding: 50% 0;
+        }
+        
+        &--link {
+            width: 100%;
+            &,
+            &:link,
+            &:visited {
+                color: $color-grey;  
+                display: inline-block;
+                width: 100%;
+                padding: 2rem 3rem;
+                transition: all .5s;
+
+                &:hover {
+                    background-color: grey;
+                }
+            }
+        }
+
+
+        &--li {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+    &__body {
+        background-color: $color-grey-light;
+        float: right;
+        width: 85vw;
+        
+        &__head {
+            background-color: $color-grey;
+            padding: 10rem; 
+            margin-bottom: 5rem;
+
+            &--text {
+                margin-top: 5rem;
+            }
+        }
+        
+        &__topic {
+            padding: 0 10rem 10rem 10rem;
+
+            line-height: 1.5;
+    
+            &--text {
+                // margin-bottom: 1.5rem;
+            }
+
+            &--list {
+                // margin-bottom: 5rem;
+            }
+
+            &--li {
+                padding: .2rem 0;
+            }
+
+        }
+    }
+
+
+
+}
