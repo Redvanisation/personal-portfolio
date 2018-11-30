@@ -856,10 +856,7 @@ body {
   margin-top: -10vh; }
   .section-skills__text {
     font-size: 2rem;
-    line-height: 1.3; }
-    @media only screen and (max-width: 56.25em) {
-      .section-skills__text {
-        line-height: 1.5; } }
+    line-height: 1.5; }
     @media only screen and (max-width: 46.875em) {
       .section-skills__text {
         text-align: left; } }
