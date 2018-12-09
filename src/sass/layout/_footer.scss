@@ -1,5 +1,6 @@
 .footer {
     height: 100%;
+    position: relative;
     background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
     padding: 35rem 10rem 20rem 10rem;
 
@@ -25,6 +26,37 @@
     }
 
 
+    &__logo-box {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        backface-visibility: hidden;
+        
+
+        @include respond(phone-vs) {
+            top: 25%;
+        }
+
+        &--logo {
+            max-width: 25rem;
+            transition: all .3s;
+            backface-visibility: hidden;
+
+            &:hover {
+                transform: scale(1.2) rotate(2deg);
+            }
+
+            @include respond(tab-port) {
+                max-width: 20rem;
+            }
+
+            @include respond(phone) {
+                max-width: 15rem;
+            }
+        }
+    }
+
     &__icons {
         border-top: 1px solid $color-grey-light;
         padding: 2rem 0; 
@@ -39,7 +71,8 @@
         &:visited,
         &:active {
             display: inline-block;
-            transition: all .2s;
+            transition: all .3s;
+            backface-visibility: hidden;
             
             &:hover {
                 transform: scale(1.1) rotate(5deg);
@@ -49,7 +82,7 @@
 
         &--icon {
             display: inline-block;
-            transition: all .2s;
+            transition: all .3s;
 
             &:not(:last-child) {
                 margin-right: 1rem;

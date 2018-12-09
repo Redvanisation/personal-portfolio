@@ -1,1 +1,9 @@
 node_modules/
+dist/css/animation.css 
+dist/css/fontello-codes.css 
+dist/css/fontello-embedded.css 
+dist/css/fontello-ie7-codes.css 
+dist/css/fontello-ie7.css 
+dist/css/fontello.css 
+dist/css/style.comp.css
+.babelrc

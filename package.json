@@ -4,9 +4,17 @@
   "description": "I'm Redvan and this is my personal portfolio v2018",
   "main": "index.js",
   "scripts": {
-    "build:js": "babel js/src -d js/dist",
     "build:js": "babel --presets es2015 js/src -d js/dist",
-    "watch:sass": "node-sass sass/main.scss css/main.comp.css -w"
+
+    "watch:sass": "node-sass src/sass/main.scss dist/css/main.comp.css -w",
+
+    "compile:sass": "node-sass src/sass/main.scss dist/css/style.comp.css",
+
+    "concat:css": "concat -o dist/css/style.concat.css dist/css/animation.css dist/css/fontello-codes.css dist/css/fontello-embedded.css dist/css/fontello-ie7-codes.css dist/css/fontello-ie7.css dist/css/fontello.css dist/css/style.comp.css",
+
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/css/style.concat.css -o dist/css/style.prefix.css",
+    "compress:css": "node-sass dist/css/style.prefix.css dist/css/main.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "keywords": [
     "redvan",
@@ -25,6 +33,11 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
-    "node-sass": "^4.9.4"
+    "node-sass": "^4.9.4",
+    "autoprefixer": "^9.3.1",
+    "concat": "^1.0.3",
+    "nodemon": "^1.18.4",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.1"
   }
 }

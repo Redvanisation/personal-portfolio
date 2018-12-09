@@ -28,6 +28,43 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90vh);
     }
 
+    &__logo-box {
+        position: absolute;
+        top: 2.5rem;
+        left: 6rem;
+
+        @include respond(tab-port) {
+            left: 4rem;
+        }
+
+        @include respond(phone) {
+            top: 2rem;
+            left: 3rem;
+        }
+
+        @include respond(phone-sml) {
+            left: 2rem;
+        }
+
+        &--logo {
+            max-width: 25rem;
+            transition: all .3s;
+            backface-visibility: hidden;
+
+            @include respond(tab-port) {
+                max-width: 20rem;
+            }
+
+            @include respond(phone) {
+                max-width: 15rem;
+            }
+
+            &:hover {
+                transform: scale(1.2) rotate(2deg);
+            }
+        }
+    }
+
     
     &__box {
         width: 80%;
@@ -38,7 +75,7 @@
         transform: translateY(-40%);
         
         @media screen and (max-width: 700px) and (max-height: 550px) {
-            transform: translateY(-60%);
+            transform: translateY(-55%);
 
         }
     }
