@@ -7,7 +7,7 @@
     @include boxShadowBlk;
     position: relative;
     transition: all .5s;
-    outline: .5rem solid $color-primary-light;
+    outline: .4rem solid $color-grey-light;
     outline-offset: .5rem;
 
     
@@ -20,7 +20,7 @@
         backface-visibility: hidden;
         transform: translate(-50%, -50%) scale(2.1);
         transition: all .2s;
-        filter: brightness(15%);
+        filter: brightness(12%);
     }
     
     &__description {
@@ -32,7 +32,7 @@
         text-align: center;
         width: 100%;
         padding: 2rem;
-        color: $color-grey-light;
+        color: $color-grey-white;
         letter-spacing: .2rem;
         backface-visibility: hidden;
         opacity: 1;
@@ -44,7 +44,7 @@
         opacity: 1;
         display: block;
         font-size: 3rem;
-        color: $color-grey-light;
+        color: $color-grey-white;
         @include txtShadowBlk;
         font-family: 'lato', sans-serif;
         font-weight: 900;
@@ -60,17 +60,17 @@
     &__icons {
         font-size: 2.5rem;
         margin-top: 2rem;
-
         
-
+        
         &--link {
             &:link,
             &:visited {
-                color: $color-grey-light;
+                color: $color-grey-white;
+                transition: all .2s;
             }
 
             &:hover {
-                color: $color-grey;
+                color: $color-secondary;
             }
 
             &:not(:last-child) {
@@ -82,6 +82,7 @@
 
     &:hover {
         transform: translateY(-2rem);
+        box-shadow: 0 4rem 6rem rgba($color-black, .5);
     }
 
     &:hover &__description {
@@ -90,8 +91,8 @@
     }
 
     &:hover &__img {
-        transform: translate(-50%, -50%) scale(3);
-        filter: blur(2px) brightness(20%);
+        transform: translate(-50%, -50%) scale(2.1);
+        filter: blur(2px) brightness(15%);
 
     }
 

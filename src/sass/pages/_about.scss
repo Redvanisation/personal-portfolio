@@ -1,0 +1,181 @@
+.about-page {
+    background-color: $color-primary-two;
+    
+}
+
+.about-header {
+    // text-align: center;
+    margin-top: 3rem;
+
+    &__pictures {
+        height: 30%;
+        width: 80%;
+        padding: 3rem 2rem;
+        margin: 5rem auto;
+        background-color: $color-primary;
+        @include clearfix;
+        transform: skewX(-7deg);
+
+        & > * {
+            transform: skewX(7deg);
+            
+            @include respond(tab-port) {
+                transform: none;
+            }
+        }
+
+        @include respond(tab-port) {
+            transform: none;
+        }
+
+        &--picture {
+            max-width: 50%;
+            outline: .5rem solid $color-primary-light;
+            outline-offset: .5rem;
+            transition: all .3s;
+    
+            &:not(:last-child) {
+                margin-right: 5rem;
+            }
+    
+            &:hover {
+                transform: scale(1.05) translateY(-1rem);
+                outline: 1rem solid $color-primary-light;
+                outline-offset: 1rem;       
+            }
+
+            @include respond(tab-port) {
+                max-width: 100% !important;
+            }
+        }
+
+        
+        
+    }
+ 
+    &__picture-container {
+        float: left;
+        width: 50%;
+
+        @include respond(tab-port) {
+            float: none;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+    
+    &__title-container {
+        
+        float: left;
+        width: 50%;
+        text-align: left;
+        padding: 5rem 0;
+
+        @include respond(tab-port) {
+            float: none;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        &--title {
+            letter-spacing: .2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 1.6;
+            color: $color-secondary;
+            text-shadow: 0 .5rem 2rem rgba($color-black, .4);
+
+            @include respond(phone) {
+                font-size: 2.5rem;
+            }
+        }
+        
+        &--description {
+            letter-spacing: .2rem;
+            font-weight: 300;
+            line-height: 1.6;
+            margin-top: .5rem;
+            
+            @include respond(phone) {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.about-main {
+    // text-align: center;
+    padding: 5rem 20rem;
+
+    @include respond(tab-port) {
+        padding: 5rem 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 5rem;
+    }
+
+    @include respond(phone-vs) {
+        padding: 5rem 3rem;
+    }
+
+    &__text {
+
+        &--p {
+            margin: 5rem 0;
+        }
+    }
+
+    &__ul {
+
+        text-align: left;
+
+        &--li {
+            margin: .5rem 0;
+        }
+    }
+
+    &__blockquote {
+        margin: 8rem 10rem;
+        padding: 2rem;
+        border-left: 5px solid $color-secondary;
+        font-size: 2.1rem;
+        letter-spacing: .2rem;
+        font-style: italic;
+        text-transform: capitalize;
+        font-weight: 500;
+
+        @include respond(tab-port) {
+            margin: 8rem 5rem;
+        }
+
+        @include respond(phone) {
+            margin: 8rem 2rem;
+        }
+
+        @include respond(phone-vs) {
+            margin: 8rem .5rem;
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        
+        &--cite {
+            display: block;
+            margin: 2rem auto 0 auto;
+            text-align: right;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            color: $color-secondary;
+            text-shadow: 0 .5rem 2rem rgba($color-black, .4);
+        }
+
+        // &--mark {
+        //     font-size: 4rem;
+        // }
+
+
+    }
+}

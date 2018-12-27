@@ -17,10 +17,11 @@ html {
 
     @include respond(big-desk) {
         font-size: 75%; // 1rem = 12px, 12/16 = 75
-    }
+
 
     // -webkit-scroll-behavior: smooth;
     // scroll-behavior: smooth;
+    }
 }
 
 body {
@@ -35,6 +36,6 @@ body {
 
 
 ::selection {
-    background-color: $color-grey-light;
-    color: $color-primary;
+    background-color: $color-tertiary;
+    color: $color-grey-light;
 }

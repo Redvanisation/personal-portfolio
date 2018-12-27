@@ -39,7 +39,7 @@
         }
 
         &--logo {
-            max-width: 25rem;
+            max-width: 20rem;
             transition: all .3s;
             backface-visibility: hidden;
 
@@ -48,17 +48,17 @@
             }
 
             @include respond(tab-port) {
-                max-width: 20rem;
+                max-width: 17rem;
             }
 
-            @include respond(phone) {
-                max-width: 15rem;
-            }
+            // @include respond(phone) {
+            //     max-width: 16rem;
+            // }
         }
     }
 
     &__icons {
-        border-top: 1px solid $color-grey-light;
+        border-top: 1px solid $color-secondary;
         padding: 2rem 0; 
         text-align: center;
 
@@ -85,7 +85,7 @@
             transition: all .3s;
 
             &:not(:last-child) {
-                margin-right: 1rem;
+                margin-right: 2rem;
             }
 
             @media only screen and (max-width: 360px) {
@@ -101,7 +101,7 @@
     }
 
     &__text {
-        border-top: 1px solid $color-grey-light;
+        border-top: 1px solid $color-secondary;
         padding: 2rem 0; 
     }
 

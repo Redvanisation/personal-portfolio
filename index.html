@@ -8,13 +8,14 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon-blk.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="dist/css/fontello-codes.css">
     <link rel="stylesheet" href="dist/css/fontello-embedded.css">
     <link rel="stylesheet" href="dist/css/fontello-ie7-codes.css">
     <link rel="stylesheet" href="dist/css/fontello-ie7.css">
     <link rel="stylesheet" href="dist/css/fontello.css">
     <link rel="stylesheet" href="dist/css/animation.css"> -->
-    <link rel="stylesheet" type="text/css" media="screen" href="dist/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="dist/css/main.comp.css">
 </head>
 
 <body>
@@ -52,33 +53,42 @@
     <header class="header" id="#top">
         <div class="header__logo-box">
             <a href="#footer" class="header__logo-box--link">
-                <img src="img/logo/redvanisation-logo-brakshd.png" alt="Logo" class="header__logo-box--logo">
+                <img src="img/logo/Redvanisation-logo-grey.png" alt="Logo" class="header__logo-box--logo">
             </a>
         </div>
         <div class="header__box">
-            <h1 class="heading-primary">
+            <!-- <h1 class="heading-primary">
                 <span class="heading-primary--h1">Hello I'm <span class="heading-primary--highlight"> Redvan</span>!</span> 
                 <span class="heading-primary--text">a creative and passionate web developer based in <span class="heading-primary--highlight"> New York city</span></span>
+            </h1> -->
+            <h1 class="heading-primary">
+                <span class="heading-primary--text">I didn't invent the internet</span> 
+                <span class="heading-primary--h1">I just make it <span class="heading-primary--highlight">look good</span></span>
             </h1>
         </div>
         <a href="#section-about" class="btn btn-white btn-header">Find out more &darr;</a>
     </header>
     <section class="section section-about">
-        <h2 class="heading-secondary margin-bottom-big" data-scroll id="section-about">
+        <h2 class="heading-secondary heading-secondary__white margin-bottom-medium" data-scroll id="section-about">
             About me
         </h2>
         <div class="section-about__container">
-            <h3 class="section-about__h3">Redvan</h3>
+            <!-- <h3 class="section-about__h3">Redvan</h3> -->
+            
+            <div class="section-about__picture-container">
+                <img srcset="img/html-imgs/redvan-1x.jpg 300w, img/html-imgs/redvan-2x.jpg 960w"
+                sizes="(max-width: 900px) 28vw, (max-width: 600px) 25vw, 300px" src="img/html-imgs/redvan-2x.jpg" alt="Picture of Redvan" class="section-about__picture ">
+            </div>
 
-            <img srcset="img/html-imgs/redvan-1x.jpg 300w, img/html-imgs/redvan-2x.jpg 960w"
-            sizes="(max-width: 900px) 28vw, (max-width: 600px) 25vw, 300px" src="img/html-imgs/redvan-2x.jpg" alt="Picture of Redvan" class="section-about__picture">
-
-            <div class="section-about__text col-1-of-2">
-                <p>I'm a very passionate freelance web developer with more than 6 years of experience, specializing in small to medium sized business websites and content management systems. </p>
-                <p>I design and develop responsive websites using the most current technologies to provide the best user experience while satisfying customer needs. </p>
+            <div class="section-about__text ">
+                <p>I'm an aspiring web developer with more than 6 years of experience, specializing in business and personal websites/apps and content management systems. </p>
+                <p>I design and develop responsive content using the most current and modern technologies to provide the best user experience while satisfying customer needs. </p>
                 <p>My previous employment and management experience provides me with leadership skills that allow me to effectively communicate with others to achieve our goals. </p> 
-                <p>In addition, it has provided me the knowledge of understanding and communicating with customers to satisfy their needs. I am a fast learner who enjoys challenges and thrives in a fast paced, goal oriented environment.</p>  <br>
-                <!-- <a href="cv.html" target="_blank" class="btn btn-white btn__about">CV &rarr;</a> -->
+                <p>It has provided me the knowledge of understanding and communicating successfully with customers to satisfy their needs. I am also a fast learner who enjoys challenges and thrives in a fast paced, goal oriented environment.</p>  <br>
+            </div>
+            <div class="section-about__btn-container">
+                <a href="about.html" target="_blank" class="btn btn-dark btn__about">More About Me &rarr;</a>
+
             </div>
         </div>
     </section>
@@ -89,7 +99,7 @@
     </section>
 
     <section class="section section-projects" >
-        <h2 class="heading-secondary__white heading-secondary margin-bottom-big" data-scroll id="section-projects">My Projects</h2>
+        <h2 class="heading-secondary__white heading-secondary margin-bottom-big" data-scroll id="section-projects">Featured Work</h2>
         <div class="row">
             <div class="col-1-of-2 card">
                     <img srcset="img/html-imgs/door-delivery-1x.png 635w, img/html-imgs/door-delivery-2x.png 1263w"
@@ -164,37 +174,38 @@
     </section>
 
     <section class="section section-skills">
-        <h2 class="heading-secondary heading-secondary__black margin-bottom-medium" data-scroll id="section-skills">
+        <h2 class="heading-secondary heading-secondary__white margin-bottom-medium" data-scroll id="section-skills">
             My Stack
         </h2>
         <div class="row">
             <div class="section-skills__text">
 
-                I am a fast learner who enjoys challenges and thrives in a fast paced, goal oriented environment. Currently have experience working with and have good to excellent skills in all the technologies and tools mentioned in this section:
+                I master cutting edge web technologies and I am ready to put my skills in use and help you develop the project you always wanted! I use a variety of the latest technologies from modern CSS, SASS, JavaScript and React to WordPress in the Front-end. I use Nodejs and PHP in the Back-end. 
+<!--                 
+                I am a fast learner who enjoys challenges and thrives in a fast paced, goal oriented environment. Currently have experience working with and have good to excellent skills in all the technologies and tools mentioned in this section: -->
 
                 <!-- I am very passionate about learning new technologies and gaining new skills, so far I have good to excellent skills in all the below technologies and I am still learning! :) -->
             </div>
         </div>
         <div class="row">
             <div class="col-1-of-2 ">
-                <h3 class="heading-tertiary heading-tertiary__black margin-bottom-medium">
+                <h3 class="heading-tertiary heading-tertiary__white margin-bottom-medium">
                     Design
                 </h3>
-                <div class="section-skills__icons">
+                <div class="section-skills__icons skills-padding">
                     <i class="devicon-html5-plain-wordmark" title="HTML5"></i>
                     <i class="devicon-css3-plain-wordmark" title="CSS3"></i>
                     <i class="devicon-sass-original" title="SASS"></i>
-                    <i class="devicon-wordpress-plain-wordmark" title="WORDPRESS"></i>
                     <i class="devicon-bootstrap-plain-wordmark" title="BOOTSTRAP"></i>
                     <i class="devicon-photoshop-plain" title="PHOTOSHOP"></i>
                 </div>
 
             </div>
             <div class="col-1-of-2">
-                <h3 class="heading-tertiary heading-tertiary__black margin-bottom-medium">
+                <h3 class="heading-tertiary heading-tertiary__white margin-bottom-medium">
                     Front End
                 </h3>
-                <div class="section-skills__icons">
+                <div class="section-skills__icons skills-padding">
                     <i class="devicon-javascript-plain" title="JAVASCRIPT"></i>
                     <i class="devicon-jquery-plain-wordmark" title="JQUERY"></i>
                     <i class="devicon-react-original-wordmark" title="REACT"></i>
@@ -203,10 +214,10 @@
         </div>
         <div class="row">
             <div class="col-1-of-2">
-                <h3 class="heading-tertiary heading-tertiary__black margin-bottom-medium">
+                <h3 class="heading-tertiary heading-tertiary__white margin-bottom-medium">
                     Back End
                 </h3>
-                <div class="section-skills__icons">
+                <div class="section-skills__icons skills-padding">
                     <i class="devicon-nodejs-plain-wordmark" title="NODE JS"></i>
                     <i class="devicon-express-original-wordmark"title="EXPRESS JS"></i>
                     <i class="devicon-python-plain-wordmark" title="PYTHON"></i>
@@ -216,13 +227,18 @@
                 </div>
             </div>
             <div class="col-1-of-2">
-                <h3 class="heading-tertiary heading-tertiary__black margin-bottom-medium">
+                <h3 class="heading-tertiary heading-tertiary__white margin-bottom-medium">
                     VCS and Tools
                 </h3>
-                <div class="section-skills__icons">
+                <div class="section-skills__icons skills-padding">
                     <i class="devicon-git-plain-wordmark" title="GIT"></i>
                     <i class="devicon-github-plain-wordmark" title="GITHUB"></i>
                     <i class="devicon-heroku-original-wordmark" title="HEROKU"></i>
+                    <i class="devicon-wordpress-plain-wordmark" title="WORDPRESS"></i>
+                    <i class="fa-icon fab fa-joomla" title="JOOMLA"></i>
+                    <i class="fa-icon fab fa-squarespace" title="SQUARESPACE"></i>
+                    <i class="fa-icon fab fa-wix" title="WIX"></i>
+
                 </div>
 
             </div>
@@ -236,36 +252,43 @@
 
     <section class="section section-contact">
         <h2 class="heading-secondary heading-secondary__white margin-bottom-big" data-scroll id="section-contact">
-            Contact Me
+            Contact
         </h2>
-        <form action="https://formspree.io/redvanisation@gmail.com" method="POST" class="section-contact__form">
 
-            <label for="fullname" class="section-contact__form--label  heading-tertiary__white margin-bottom-small">Name</label>
-            <input type="text" name="fullname" class="section-contact__form--input" required>
+        <h3 class="section-contact__hire margin-bottom-medium">Hiring me for your website/apps projects is as easy as 3 steps !</h3>
 
-            <label for="email" class="section-contact__form--label heading-tertiary__white margin-bottom-small">Email</label>
-            <input type="email" class="section-contact__form--input" name="email" size="100" required>
-            
-            <label class="section-contact__form--label heading-tertiary__white margin-bottom-small">Message</label>
-            <textarea name="message" class="section-contact__form--textarea" id="message" cols="30" rows="10" required></textarea>
-            
-            <input type="submit" class="btn btn-white btn--submit" Value="  Send   &rAarr;">
-        
-        </form>
+        <div class="row section-contact__steps">
+            <div class="col-1-of-3 section-contact__steps--step">
+                <h3 class="section-contact__steps--h3">Get in Touch</h3>
+                <p class="section-contact__steps--p">Start by sending me an Email and sharing your project <div><a href="contact.html" class="section-contact__steps--link">&rightarrow; Click Here</a></div></p>
+            </div>
+
+            <div class="col-1-of-3 section-contact__steps--step">
+                <h3 class="section-contact__steps--h3">Get An Estimate</h3>
+                <p class="section-contact__steps--p">Together we’ll define the scope of work for your project, After that I’ll provide my estimated cost and timeline to complete the task.
+                </p>
+            </div>
+
+            <div class="col-1-of-3 section-contact__steps--step">
+                <h3 class="section-contact__steps--h3">Hire Me</h3>
+                <p class="section-contact__steps--p">Yes, it’s really that simple! Making this entire process as painless as possible for both of us is one of the benefits you get by hiring me.</p>
+
+            </div>
+        </div>
     </section>
 
     <footer class="footer" id="footer">
 
         <div class="footer__logo-box">
-            <a href="#top" class="footer__logo-box--link"><img src="img/logo/redvanisation-logo-brakshd.png" alt="Logo" class="footer__logo-box--logo"></a>
+            <a href="#top" class="footer__logo-box--link"><img src="img/logo/Redvanisation-logo-grey.png" alt="Logo" class="footer__logo-box--logo"></a>
         </div>
         <div class="row">
             <div class="col-1-of-2">
                 <div class="footer__icons">
-                    <a href="https://www.instagram.com/mr_reeed/" target="_blank" class="footer__link--icon"><i class="icon-instagram"></i></a>
-                    <a href="https://github.com/Redvanisation" target="_blank" class="footer__link--icon"><i class="icon-github-circled"></i></a>
-                    <a href="https://www.linkedin.com/in/redvanisation/" target="_blank" class="footer__link--icon"><i class="icon-linkedin"></i></a>
-                    <a href="https://twitter.com/Redvano" target="_blank" class="footer__link--icon"><i class="icon-twitter"></i></a>
+                    <a href="https://www.instagram.com/mr_reeed/" target="_blank" class="footer__link--icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Redvanisation" target="_blank" class="footer__link--icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/redvanisation/" target="_blank" class="footer__link--icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/Redvano" target="_blank" class="footer__link--icon"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
             <div class="col-1-of-2">

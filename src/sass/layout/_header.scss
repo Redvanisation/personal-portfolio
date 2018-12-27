@@ -4,9 +4,9 @@
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     (max-resolution: 192dpi) and (min-width: 125em) {
-        background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('https://redvanisation.github.io/personal-portfolio/img/background/header-2x.jpg');
+        background-image:  $gradient1, url('https://redvanisation.github.io/personal-portfolio/img/background/header-2x.jpg');
     }
-    background-image: linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85)), url('https://redvanisation.github.io/personal-portfolio/img/background/header-1x.jpg');
+    background-image: $gradient1, url('https://redvanisation.github.io/personal-portfolio/img/background/header-1x.jpg');
     height: 105vh;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
@@ -30,7 +30,7 @@
 
     &__logo-box {
         position: absolute;
-        top: 2.5rem;
+        top: 3rem;
         left: 6rem;
 
         @include respond(tab-port) {
@@ -47,16 +47,16 @@
         }
 
         &--logo {
-            max-width: 25rem;
+            max-width: 18rem;
             transition: all .3s;
             backface-visibility: hidden;
 
             @include respond(tab-port) {
-                max-width: 20rem;
+                max-width: 15rem;
             }
 
             @include respond(phone) {
-                max-width: 15rem;
+                max-width: 10rem;
             }
 
             &:hover {
@@ -75,8 +75,7 @@
         transform: translateY(-40%);
         
         @media screen and (max-width: 700px) and (max-height: 550px) {
-            transform: translateY(-55%);
-
+            transform: translateY(-50%);
         }
     }
 

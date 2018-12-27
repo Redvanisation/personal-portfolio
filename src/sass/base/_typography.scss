@@ -4,30 +4,37 @@ body{
 
 .heading-primary {
     font-family: 'Lato', 'Raleway', sans-serif;
-    color: $color-grey-light;
+    color: $color-primary;
     width: 100%;
     
     &--h1 {
         display: inline-block;
-        font-size: 5.5rem;
+        font-size: 5rem;
         text-transform: uppercase;
-        letter-spacing: 1rem;
+        letter-spacing: .7rem;
         margin-bottom: .2rem;
         padding: 1rem 3rem 1rem 2rem;
-        font-weight: 900;
-        background-color: rgba($color-primary-dark, .7);
+        font-weight: 800;
+        background-color: rgba($color-secondary, .7);
+
 
         @include respond(tab-port) {
-            font-size: 4.5rem;
+            font-size: 4rem;
         }
 
-        @include respond(phone) {
-            font-size: 3.5rem;
+        @include respond(phablet) {
             letter-spacing: .2rem;
         }
 
-        @media only screen and (max-width: 700px ) and (max-height: 550px) {
-            font-size: 4rem;
+        @include respond(phone) {
+            font-size: 3.2rem;
+            // letter-spacing: 10rem;
+        }
+
+        @media only screen and (max-width: 700px ) and (max-height: 400px) {
+            font-size: 3.2rem;
+            letter-spacing: .2rem;
+
         }
     }
     
@@ -36,37 +43,47 @@ body{
         display: inline-block;
         line-height: 1.5;
         letter-spacing: .2rem;
-        font-weight: 600;
-        font-size: 3rem;
-        background-color: rgba($color-primary-dark, .8);
+        font-weight: 800;
+        font-size: 5rem;
+        background-color: rgba($color-secondary, .7);
         padding: 0 2rem 1rem 4rem;
         margin-left: 2rem;
         width: 90%;
 
+        @include respond(tab-land) {
+            font-size: 4rem;
+        }
+
         @include respond(tab-port) {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
+            letter-spacing: 0;
+            width: 95%;
+            padding: 0 1rem 1rem 2rem;
+            // margin-left: 1.5rem;
         }
 
         @include respond(phone) {
-            font-size: 1.5rem;
-            letter-spacing: .2rem;
+            font-size: 2.1rem;
+            padding: 0 .3rem 0 .2rem;
+            width: 100%;
         }
 
-        @media only screen and (max-width: 700px ) and (max-height: 550px) {
-            font-size: 2.5rem;
+        @media only screen and (max-width: 700px ) and (max-height: 400px) {
+            font-size: 3rem;
+            letter-spacing: .3rem;
+            margin-top: 2rem;
         }
 
     }
 
     &--highlight {
-        color: $color-grey;
         display: inline-block;
         transition: all .3s;
         margin-right: 1rem;
 
-        color: $color-grey-light;
+        color: $color-grey-white;
         @include txtShadowBlk;
-        background-color: rgba($color-grey, .5);
+        // background-color: rgba($color-grey, .5);
         padding: 0 .5rem;
         border-radius: 3px;
 
@@ -93,7 +110,7 @@ body{
     text-transform: uppercase;
     line-height: 1.7;
     letter-spacing: 1rem;
-    @include txtShadowWt;
+    text-shadow: 0 1rem 2rem rgba($color-black, .4); 
     transition: all .3s;
 
     @include respond(phone) {
@@ -106,12 +123,13 @@ body{
 
     &:hover {
         transform: scale(1.5) rotate(5deg);
-        text-shadow: 0 .5rem 1rem rgba($color-grey-light, .4);
+        text-shadow: 0 .5rem 1rem rgba($color-black, .4);
 
     }
 
     &__black {
         @include txtShadowBlk;
+        color: $color-black;
 
         &:hover {
             text-shadow: 0 .5rem 1rem rgba($color-black, .4);
@@ -120,11 +138,11 @@ body{
     }
 
     &__white {
-        color: $color-grey-light;
-        text-shadow: 0 .4rem 1rem rgba($color-grey-light, .4); 
+        color: $color-grey-white;
+        // text-shadow: 0 1rem 2rem rgba($color-black, .4); 
 
         &:hover {
-            text-shadow: 0 .5rem 1rem rgba($color-grey-light, .4);
+            // text-shadow: 0 2rem 3rem rgba($color-black, .4);
         }
 
     }
@@ -141,13 +159,13 @@ body{
 
     &:hover {
         transform: scale(1.5) ;
-        text-shadow: 0 .5rem 1rem rgba($color-white, .4);
+        text-shadow: 0 .5rem 1rem rgba($color-black, .4);
 
     }   
     
     &__black {
+        color: $color-primary;
         @include txtShadowBlk;
-
         &:hover {
             text-shadow: 0 .5rem 1rem rgba($color-black, .4);
         }
@@ -155,8 +173,13 @@ body{
     }
 
     &__white {
-        color: $color-grey-light;
-        box-shadow: 0 5rem 10rem rgba($color-white, 0);
+        color: $color-grey-white;
+        text-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+
+    &__other {
+        color: $color-secondary;
+        text-shadow: 0 1rem 2rem rgba($color-black, .4);
     }
 
     &__center {
@@ -167,31 +190,113 @@ body{
     }
 }
 
+.section-about {
 
-.section-contact {
-    &__form {
-
-        &--input,
-        &--textarea {
-            font-size: 2rem;
-            color: $color-grey-light;
-            font-weight: 200;
-        }
-
-        &--textarea {
-            text-align: left;
-        }
-
-
+    &__text {
+        letter-spacing: .2rem;
+        line-height: 1.2;
+        text-align: left;
+        // float: right;
+        // display: inline-block;
+        font-weight: 400;
+        font-family: lato;
+        color: $color-grey-white;
+        font-size: $global-font-size;
     }
 }
 
+.section-skills {
+    color: $color-grey-light;
+    
+    &__text {
+        font-size: $global-font-size;
+        color: $color-grey-white;
+        line-height: 1.5;
+        letter-spacing: .2rem;
+        font-weight: 500;
 
 
+        // text-align: left;
+
+        @include respond(phablet) {
+            text-align: left;
+        }
+    }
+}
+
+.section-contact {
+
+    color: $color-grey-white;
+    &__hire {
+        font-size: 2rem;
+        letter-spacing: .5rem;
+        font-weight: 200;
+        text-shadow: 0 .5rem 2rem rgba($color-black, .4);
+    }
+
+    &__steps {
+        
+        &--step {
+            margin: 1rem 0;
+            text-align: left;
+        }
+        
+        &--h3 {
+            margin: 2rem auto;
+            font-size: 2.5rem;
+            color: $color-secondary;
+            text-transform: uppercase;
+            letter-spacing: .5rem;
+        }
+        
+        &--p {
+            font-size: $global-font-size;
+            letter-spacing: .2rem;
+            line-height: 1.5;
+        }
+
+        &--link {
+            &,
+            &:link,
+            &:visited {
+                text-transform: capitalize;
+                color: $color-secondary;
+                text-decoration: none;
+                font-weight: 800;
+                font-size: 2rem;
+                display: inline-block;
+                letter-spacing: .2rem;
+                margin-top: 1rem;
+                border-bottom: 1px solid transparent;
+                transition: all .3s;
+
+                &:hover {
+                    border-bottom: 1px solid $color-secondary;
+                }
+            }
+        }
+    }
+
+    // &__form {
+
+    //     &--input,
+    //     &--textarea {
+    //         font-size: 2rem;
+    //         color: $color-grey-light;
+    //         font-weight: 200;
+    //     }
+
+    //     &--textarea {
+    //         text-align: left;
+    //     }
+
+
+    // }
+}
 
 
 .footer {
-    color: $color-grey-light;
+    color: $color-grey-white;
     font-size: $global-font-size;
 
     &__icons {
@@ -212,7 +317,8 @@ body{
         &:visited,
         &:active {
             text-decoration: none;
-            color: $color-grey;
+            color: $color-secondary;
+            text-transform: uppercase;
             font-weight: 900;
             
             // &:hover {
@@ -228,11 +334,11 @@ body{
 
         &--icon {
             text-decoration: none;
-            color: $color-grey-light;
+            color: $color-grey-white;
             font-weight: 600;
 
             &:hover {
-                color: $color-grey;
+                color: $color-secondary;
             }
         }
 }
@@ -241,6 +347,84 @@ body{
         font-weight: 600;
     }
 }
+
+// ABOUT PAGE STYLES:
+
+.about-page {
+    color: $color-grey-white;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.about-main {
+
+    &__title {
+        display: block;
+        text-align: center;
+        width: 30rem;
+        margin: 0 auto;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+
+    &__text {
+    
+        &--p {
+            text-align: left;
+            line-height: 1.7;
+            font-weight: 300;
+            letter-spacing: .2rem;
+        }
+    }
+
+    &__ul {
+        font-family: lato, sans-serif;
+        
+        &--li {
+            font-weight: 200;
+            letter-spacing: .1rem;
+        }
+    }
+
+    &__action {
+
+        font-style: italic;
+        letter-spacing: .2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 1.6;
+
+        &--link {
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: $color-secondary;
+                font-weight: 600;
+                text-transform: capitalize;
+                transition: all .4s;
+                border-bottom: 2px solid transparent;
+                display: inline-block;
+                
+                &:hover {
+                    border-bottom: 2px solid $color-secondary;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
+.about-header {
+    text-align: center;
+}
+
+
+// RESUME PAGE STYLES:
 
 .resume {
 
@@ -287,10 +471,6 @@ body{
                 }
 
             }
-
-            &--text {
-                
-            }
         }
 
         &__topic {
@@ -329,4 +509,95 @@ body{
 
 #head-email {
     margin-left: 3rem;
+}
+
+
+// CONTACT PAGE STYLES:
+
+.contact-page {
+
+    color: $color-grey-white;
+
+    &__hire-div {
+
+        &--title {
+            font-size: 2rem;
+            letter-spacing: .5rem;
+            font-weight: 600;
+            // text-shadow: 0 .5rem 2rem rgba($color-black, .4);
+
+            @include respond(phone) {
+                text-align: left;
+            }
+        }
+
+        &--steps {
+            margin: 1rem 0;
+            text-align: left;
+        }
+
+        &--step {
+            margin: 1rem 0;
+            text-align: left;        
+        }
+
+        &--h3 {
+            font-family: lato, sans-serif;
+            margin: 2rem auto;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: .5rem;
+
+            @include respond(phone-vs) {
+                text-align: center;
+            }
+        }
+
+        &--highlight {
+            color: $color-secondary;
+        }
+
+        &--title-italic {
+            font-style: italic;
+            font-size: 2rem;
+            letter-spacing: .5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        &--p {
+            font-size: $global-font-size;
+            letter-spacing: .2rem;
+            line-height: 1.6;
+        }
+    }
+
+    &__action-title {
+        font-style: italic;
+        font-size: 3rem;
+        letter-spacing: .5rem;
+        font-weight: 600; 
+        
+        &--highlight {
+            color: $color-secondary;
+        }
+    }
+
+
+    &__form {
+
+        &--input,
+        &--textarea {
+            font-size: 2rem;
+            color: $color-grey-white;
+            font-weight: 200;
+        }
+
+        &--textarea {
+            text-align: left;
+        }
+
+
+    }
+
 }

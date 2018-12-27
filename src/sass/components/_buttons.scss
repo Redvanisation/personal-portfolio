@@ -4,7 +4,6 @@
     &:visited {
         display: inline-block;
         text-transform: uppercase;
-        // padding: 2rem 6.5rem 2rem 5rem;
         padding: 2rem 3rem;
         border-radius: .5rem;
         text-decoration: none;
@@ -12,12 +11,9 @@
         font-weight: 900;
         outline: none;
         transition: all .3s;
-        // @include boxShadowWt;
 
         @include respond(phone) {
             font-size: 1rem;
-            // padding: 1rem 3rem;
-            
             margin-top: 2rem;
         }
 
@@ -25,9 +21,7 @@
 
     &:hover {
         transform: rotate(5deg) translate(-50%, 2rem);         
-        // transform: skew(-5.5deg) translate(0, 1rem);
-
-        box-shadow: 0 .6rem 2.5rem rgba($color-white, .5);
+        box-shadow: 0 .6rem 2.5rem rgba($color-secondary, .5);
 
     }
 
@@ -68,17 +62,18 @@
         
         display: inline-block;
         margin-top: 1.5rem;
-        // margin-left: 1rem;
+        // text-align: center !important;
 
-        @include respond(phablet) {
-            margin-top: -.5rem !important;
-            padding: 1.5rem 4.5rem 1.5rem 4rem !important;
 
-        }
+        // @include respond(phablet) {
+        //     margin-top: -.5rem !important;
+        //     padding: 1.5rem 4.5rem 1.5rem 4rem !important;
 
-        @include respond(phone-sml) {
-            margin-top: -.5rem !important;
-        }
+        // }
+
+        // @include respond(phone-sml) {
+        //     margin-top: -.5rem !important;
+        // }
 
         &:hover {
             transform: rotate(6deg) translate(0, 1rem);         
@@ -93,8 +88,8 @@
 
 .btn-white {
     background-color: transparent;
-    color: $color-grey-light;
-    border: 2px solid $color-grey-light;
+    color: $color-grey-white;
+    border: 2px solid $color-secondary;
 
     &:hover {
         // background-color: $color-grey-light;
@@ -105,18 +100,18 @@
 }
 
 .btn-dark {
-    background-color: $color-primary-dark;
-    color: $color-grey-light;
-    border: 1px solid $color-black;
+    background-color: transparent;
+    color: $color-grey-white;
+    border: 2px solid $color-secondary;
 
-    box-shadow: 0 1rem 2.5rem rgba($color-black, .5) !important;
+    // box-shadow: 0 1rem 2.5rem rgba($color-black, .5) !important;
 
     &:hover {
-        box-shadow: 0 2rem 4rem rgba($color-black, .5) !important;
+        box-shadow: 0 1rem 2rem rgba($color-secondary, .5) !important;
     }
 
     &:active {
-        box-shadow: 0 .5rem 1rem rgba($color-black, .5) !important;
+        box-shadow: 0 .5rem 1rem rgba($color-secondary, .5) !important;
     }
 }
 
@@ -126,6 +121,10 @@
     left: 50%;
     transform: translate(-50%, 0);
     line-height: 2rem;
+
+    @include respond(tab-land) {
+        top: 58vh;
+    }
 }
 
 .btn-projects {
@@ -151,4 +150,36 @@
     &:active {
         transform: rotate(-5.5deg) translate(-50%, 200%);
     }
+}
+
+.btn-about-page {
+    
+    &:hover {
+        transform: rotate(-6deg) translate(0, 0);
+    }
+}
+
+.btn-back {
+    &,
+    &:link,
+    &:visited {
+        display: block;
+        width: 20rem;
+        text-align: center;
+        line-height: 1.6;
+        letter-spacing: .1rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin: 4rem auto;
+        font-size: $global-font-size;
+        color: $color-secondary;
+        transition: all .4s;
+        
+        &:hover {
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+    }
+
+
 }

@@ -1,0 +1,117 @@
+.contact-page {
+
+    background-color: $color-primary;
+    // padding: 3rem ;
+    padding: 3rem 0 5rem 0;
+
+    &__header {
+        text-align: center;
+        padding: 2rem;
+        color: $color-tertiary;
+    }
+
+    
+
+    &__main {
+        margin: 5rem auto 0 auto;
+    }
+
+    &__hire-div {
+        text-align: center;
+        padding: 3rem ;
+
+        &--title {
+            width: 80%;
+            margin: 0 auto;
+
+            @include respond(phone) {
+                width: 100%;
+            }
+        }
+
+        &--steps {
+            padding: 0 3rem ;
+        }
+
+
+    }
+
+    &__action-title {
+        text-align: center;
+        margin: 10rem 0 25rem 0;
+        padding: 3rem ;
+    }
+
+    &__form-container {
+        width: 100%;
+        background-color: $color-tertiary;
+        padding: 5rem 3rem;
+        margin: -10rem 0 10rem 0;
+
+        // -webkit-clip-path: polygon(0 0 , 100% 20vh, 100% 100%, 0 100%);
+        // clip-path: polygon(0 0 , 100% 20vh, 100% 100%, 0 100%);
+        
+        transform: skewY(5.5deg);
+
+        & > * {
+            transform: skewY(-5.5deg);
+        }
+    }
+    
+    &__form {
+        text-align: center;
+        padding: 5rem 0;
+
+        &--label,
+        &--input,
+        &--textarea {
+            margin: 0 auto;
+            padding: 2rem;
+            border-radius: .5rem;
+            background-color: transparent;
+            transition: transform .4s, border-bottom .4s, border .4s;
+            margin-bottom: 3rem;
+            outline: none;
+        }
+        
+        &--input,
+        &--textarea {
+            display: block;
+            border: 1px solid $color-secondary;
+            width: 60%;
+
+            @include respond(phone) {
+                width: 100%;
+            }
+
+
+
+            &:focus,
+            &:hover {
+                transform: scale(1.1);
+                background-color: rgba($color-primary-two, .2);
+            }
+        }
+        
+        &--label {
+            display: inline-block;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            line-height: 1.7;
+            letter-spacing: 1rem;
+            @include txtShadowBlk;
+        }
+
+        &--input,
+        &--textarea {
+
+            &:focus {
+                border: 2px solid $color-grey;
+                border-bottom: 3px solid $color-grey-white;
+            }
+
+        }
+
+    }
+
+}
