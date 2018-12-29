@@ -1120,6 +1120,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-contact {
       padding: 10rem 10rem 40rem 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-contact {
+      padding: 10rem 5rem 40rem 5rem; } }
 
 .projects-page {
   background-image: linear-gradient(to right bottom, #575757, #191919); }
