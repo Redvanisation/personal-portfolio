@@ -27,7 +27,7 @@
 
     &:active {
         transform: translate(-50%, -.3rem);
-        box-shadow: 0 .5rem 1rem rgba($color-white, .5);
+        box-shadow: 0 .5rem 1rem rgba($color-secondary, .5);
     }
 
     &__arrow {
@@ -62,18 +62,7 @@
         
         display: inline-block;
         margin-top: 1.5rem;
-        // text-align: center !important;
-
-
-        // @include respond(phablet) {
-        //     margin-top: -.5rem !important;
-        //     padding: 1.5rem 4.5rem 1.5rem 4rem !important;
-
-        // }
-
-        // @include respond(phone-sml) {
-        //     margin-top: -.5rem !important;
-        // }
+ 
 
         &:hover {
             transform: rotate(6deg) translate(0, 1rem);         
@@ -91,11 +80,6 @@
     color: $color-grey-white;
     border: 2px solid $color-secondary;
 
-    &:hover {
-        // background-color: $color-grey-light;
-        // color: $color-primary;
-
-    }
 
 }
 
@@ -135,6 +119,16 @@
 
     &:active {
         transform: skew(-5.5deg) translate(0, 1.5rem);
+    }
+}
+
+.btn-contact {
+    &:hover {
+        transform: rotate(5.5deg) translate(0, 1rem);
+    }
+
+    &:active {
+        transform: rotate(5.5deg) translate(0, 1.5rem);
     }
 }
 

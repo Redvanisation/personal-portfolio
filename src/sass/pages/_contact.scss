@@ -19,6 +19,7 @@
     &__hire-div {
         text-align: center;
         padding: 3rem ;
+        margin: 0 0 1rem 0;
 
         &--title {
             width: 80%;
@@ -31,6 +32,7 @@
 
         &--steps {
             padding: 0 3rem ;
+            margin: 0 auto 10rem auto;
         }
 
 
@@ -38,7 +40,7 @@
 
     &__action-title {
         text-align: center;
-        margin: 10rem 0 25rem 0;
+        margin: 5rem 0;
         padding: 3rem ;
     }
 
@@ -46,7 +48,7 @@
         width: 100%;
         background-color: $color-tertiary;
         padding: 5rem 3rem;
-        margin: -10rem 0 10rem 0;
+        // margin: -10rem 0 10rem 0;
 
         // -webkit-clip-path: polygon(0 0 , 100% 20vh, 100% 100%, 0 100%);
         // clip-path: polygon(0 0 , 100% 20vh, 100% 100%, 0 100%);

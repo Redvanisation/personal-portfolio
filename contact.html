@@ -26,6 +26,10 @@
         </header>
         <main class="contact-page__main">
 
+            <h2 class="contact-page__action-title">
+                    Fill out <span class="contact-page__action-title--highlight"><a href="#form" class="contact-page__action-title--link">the form</a></span> bellow and let's get coding!
+            </h2>
+
             <div class="contact-page__hire-div">
                 <h3 class="contact-page__hire-div--title margin-bottom-medium">
                     We will pass by the following steps together in other to give you the best experience and deliver the best and most optimized results for you!
@@ -62,13 +66,9 @@
                 </div>
             </div>
 
-            <h2 class="contact-page__action-title">
-                Fill out <span class="contact-page__action-title--highlight">the form</span> bellow and let's get coding!
-            </h2>
-
             <div class="contact-page__form-container">
 
-                <form action="https://formspree.io/redvanisation@gmail.com" method="POST" class="contact-page__form">
+                <form action="https://formspree.io/redvanisation@gmail.com" method="POST" class="contact-page__form" id="form" data-scroll>
     
                     <label for="fullname" class="contact-page__form--label  heading-tertiary__dark margin-bottom-small">Name*</label>
                     <input type="text" name="fullname" class="contact-page__form--input" required>
@@ -91,4 +91,11 @@
             <a href="/" class="btn-back">Go back &leftarrow;</a>
         </main>
     </div>
+    <script src="/dist/js/smooth-scroll.polyfills.min.js"></script>
+    <script src="/dist/js/index.js"></script>
+    <script>
+        	var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 550
+            });
+    </script>
 </body>
