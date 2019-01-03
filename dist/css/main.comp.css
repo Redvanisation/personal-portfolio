@@ -739,15 +739,18 @@ body {
     transform: translate(-50%, -1700%);
     width: 100%; }
   .card__icons {
-    font-size: 2.5rem;
-    margin-top: 2rem; }
+    font-size: 3rem;
+    margin-top: 3rem; }
     .card__icons--link:link, .card__icons--link:visited {
       color: #EBE9E9;
       transition: all .2s; }
     .card__icons--link:hover {
       color: #ef6817; }
     .card__icons--link:not(:last-child) {
-      margin-right: 1.5rem; }
+      margin-right: 5rem; }
+      @media only screen and (max-width: 26.5625em) {
+        .card__icons--link:not(:last-child) {
+          margin-right: 2rem; } }
   .card:hover {
     transform: translateY(-2rem);
     box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.5); }

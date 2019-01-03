@@ -58,8 +58,8 @@
     }
 
     &__icons {
-        font-size: 2.5rem;
-        margin-top: 2rem;
+        font-size: 3rem;
+        margin-top: 3rem;
         
         
         &--link {
@@ -67,6 +67,8 @@
             &:visited {
                 color: $color-grey-white;
                 transition: all .2s;
+
+                
             }
 
             &:hover {
@@ -74,7 +76,12 @@
             }
 
             &:not(:last-child) {
-                margin-right: 1.5rem;
+                margin-right: 5rem;
+
+                @include respond(phone-sml) {
+                    margin-right: 2rem;
+
+                }
             }
         }
         
