@@ -979,7 +979,8 @@ body {
     margin-top: 3rem; }
     .card__icons--link:link, .card__icons--link:visited {
       color: #EBE9E9;
-      transition: all .2s; }
+      transition: all .2s;
+      text-decoration: none; }
     .card__icons--link:hover {
       color: #ef6817; }
     .card__icons--link:not(:last-child) {
